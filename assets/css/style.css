@@ -27,7 +27,8 @@ a{color:var(--accent);text-decoration:none}
 
 /* ====== Layout ====== */
 .container{max-width:var(--w);margin:0 auto;padding:24px}
-section{margin-top:64px}
+/* Only apply big spacing to top-level sections, not inner cards */
+.container > section { margin-top:64px; }
 
 /* ====== Header / Nav ====== */
 header{
@@ -68,7 +69,7 @@ header{
   background:transparent;color:var(--accent);border:1px solid var(--accent)
 }
 
-/* ====== Content grid / cards ====== */
+/* ====== Content grid (home) ====== */
 .grid{
   display:grid;gap:24px;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr))
@@ -81,6 +82,27 @@ header{
 .grid article:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
 .grid h2{margin-top:0;margin-bottom:.4em}
 .tags{color:var(--muted);font-size:.9em}
+
+/* ====== Expertise cards ====== */
+.cards{
+  display:grid;
+  gap:24px;
+  grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+}
+.card{
+  background:#fff;
+  border:1px solid var(--soft);
+  border-radius:12px;
+  padding:22px;
+  box-shadow: var(--shadow-sm);
+  transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.card:hover{
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+.card h2{margin-top:0;margin-bottom:.4em}
 
 /* ====== Projects list ====== */
 .project{padding:18px 0;border-bottom:1px solid var(--soft)}

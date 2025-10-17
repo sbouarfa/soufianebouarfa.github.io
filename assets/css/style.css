@@ -1,0 +1,24 @@
+:root{
+  --w: 900px;
+  --accent:#0a66c2; /* change to your brand color later */
+  --text:#1b1b1b; --muted:#666; --bg:#fff; --soft:#eee;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg)}
+.container{max-width:var(--w);margin:0 auto;padding:24px}
+header{display:flex;align-items:center;gap:24px;flex-wrap:wrap;border-bottom:1px solid var(--soft)}
+.brand{font-weight:700;text-decoration:none;color:var(--text)}
+.nav{display:flex;gap:16px;flex-wrap:wrap}
+.nav a{color:var(--accent);text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+.nav a.active,.nav a:hover{border-color:var(--accent)}
+.hero{padding:32px 0}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.cards{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{border:1px solid var(--soft);border-radius:12px;padding:16px}
+.tags{color:var(--muted);font-size:.9em}
+.project{padding:16px 0;border-bottom:1px solid var(--soft)}
+.foot{margin-top:32px;border-top:1px solid var(--soft);color:var(--muted)}
+img{max-width:100%;height:auto;border-radius:8px}

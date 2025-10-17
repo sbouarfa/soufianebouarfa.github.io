@@ -1,24 +1,96 @@
+/* ====== Design tokens ====== */
 :root{
-  --w: 900px;
-  --accent:#0a66c2; /* change to your brand color later */
-  --text:#1b1b1b; --muted:#666; --bg:#fff; --soft:#eee;
+  --w: 960px;
+  --accent: #0a66c2;
+  --text: #1b1b1b;
+  --muted:#666;
+  --bg:#ffffff;
+  --soft:#e9eef3;
+  --hero-from:#f6f8fb;
+  --hero-to:#ffffff;
+  --shadow-sm: 0 2px 5px rgba(0,0,0,.04);
+  --shadow-md: 0 8px 24px rgba(0,0,0,.08);
 }
+
+/* ====== Base ====== */
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
-body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg)}
+body{
+  /* Uses Inter if you add the <link> in your HTML; falls back cleanly */
+  font:16px/1.65 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none}
+
+/* ====== Layout ====== */
 .container{max-width:var(--w);margin:0 auto;padding:24px}
-header{display:flex;align-items:center;gap:24px;flex-wrap:wrap;border-bottom:1px solid var(--soft)}
-.brand{font-weight:700;text-decoration:none;color:var(--text)}
-.nav{display:flex;gap:16px;flex-wrap:wrap}
-.nav a{color:var(--accent);text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+section{margin-top:64px}
+
+/* ====== Header / Nav ====== */
+header{
+  display:flex;align-items:center;gap:24px;flex-wrap:wrap;
+  position:sticky;top:0;background:#fff;z-index:10;
+  border-bottom:1px solid var(--soft);
+  box-shadow: var(--shadow-sm);
+}
+.brand{font-weight:700;letter-spacing:.2px;color:var(--text)}
+.nav{display:flex;gap:18px;flex-wrap:wrap}
+.nav a{
+  padding:10px 0;border-bottom:2px solid transparent
+}
 .nav a.active,.nav a:hover{border-color:var(--accent)}
-.hero{padding:32px 0}
-.btn{display:inline-block;padding:10px 16px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
-.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
-.grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.cards{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.card{border:1px solid var(--soft);border-radius:12px;padding:16px}
+
+/* ====== Hero ====== */
+.hero{
+  text-align:center;
+  padding:96px 20px 72px;
+  background: linear-gradient(180deg, var(--hero-from) 0%, var(--hero-to) 100%);
+  border-radius:12px;
+  box-shadow: var(--shadow-sm);
+}
+.hero h1{font-size:2.3rem;line-height:1.2;margin:.2em 0 .4em}
+.hero p{max-width:680px;margin:0 auto 1.6em;color:#404040}
+.cta .btn{margin:0 8px}
+
+/* ====== Buttons ====== */
+.btn{
+  display:inline-block;
+  padding:11px 18px;border-radius:10px;
+  background:var(--accent);color:#fff;border:1px solid var(--accent);
+  transition: transform .06s ease, box-shadow .2s ease, background .2s ease;
+}
+.btn:hover{box-shadow:var(--shadow-md);transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn.ghost{
+  background:transparent;color:var(--accent);border:1px solid var(--accent)
+}
+
+/* ====== Content grid / cards ====== */
+.grid{
+  display:grid;gap:24px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr))
+}
+.grid article{
+  background:#fff;border:1px solid var(--soft);border-radius:12px;padding:22px;
+  box-shadow:var(--shadow-sm);
+  transition:transform .15s ease, box-shadow .2s ease;
+}
+.grid article:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
+.grid h2{margin-top:0;margin-bottom:.4em}
 .tags{color:var(--muted);font-size:.9em}
-.project{padding:16px 0;border-bottom:1px solid var(--soft)}
-.foot{margin-top:32px;border-top:1px solid var(--soft);color:var(--muted)}
+
+/* ====== Projects list ====== */
+.project{padding:18px 0;border-bottom:1px solid var(--soft)}
+.project:last-child{border-bottom:0}
+
+/* ====== Footer ====== */
+.foot{
+  margin-top:64px;border-top:1px solid var(--soft);
+  color:var(--muted);background:#fafbfc
+}
+
+/* ====== Media helpers ====== */
 img{max-width:100%;height:auto;border-radius:8px}

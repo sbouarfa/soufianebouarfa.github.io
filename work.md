@@ -2,6 +2,7 @@
 layout: page
 title: "Selected Architecture Engagements"
 summary: "Representative programs and architecture work."
+permalink: /work/
 ---
 
 <div class="grid">

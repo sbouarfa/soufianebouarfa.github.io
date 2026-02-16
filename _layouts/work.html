@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article>
+  <div class="kicker">{{ page.domain }}</div>
+  <h1>{{ page.title }}</h1>
+  {% if page.summary %}
+  <p class="meta">{{ page.summary }}</p>
+  {% endif %}
+
+  {% if page.tags %}
+  <div>
+    {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {{ content }}
+  {% include cta.html %}
+</article>

@@ -2,6 +2,7 @@
 layout: page
 title: "Architecture Journal"
 summary: "Essays and reflections on enterprise architecture, governance, and transformation in regulated and asset-heavy organizations."
+permalink: /insights/
 ---
 
 Enterprise architecture is not about diagrams.

@@ -1,0 +1,30 @@
+title: "Soufiane Bouarfa"
+description: "Enterprise & Solution Architect — governance-led architecture for regulated and asset-heavy organizations."
+url: "https://soufianebouarfa.github.io"
+timezone: "Europe/Amsterdam"
+
+markdown: kramdown
+
+collections:
+  work:
+    output: true
+    permalink: /work/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "work"
+    values:
+      layout: "work"
+
+plugins:
+  - jekyll-sitemap

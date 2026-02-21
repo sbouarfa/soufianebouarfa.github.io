@@ -1,69 +1,63 @@
+:root { --max: 980px; }
+
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   line-height: 1.6;
-  color: #111;
 }
 
 .container {
-  max-width: 1100px;
+  max-width: var(--max);
   margin: 0 auto;
-  padding: 32px;
+  padding: 32px 18px;
 }
 
-.header, .footer {
+.site-header, .site-footer {
   border-bottom: 1px solid #eee;
+}
+
+.site-footer {
+  border-top: 1px solid #eee;
+  border-bottom: none;
+  padding: 24px 0;
+  margin-top: 48px;
+  font-size: 14px;
 }
 
 .nav {
   display: flex;
-  gap: 20px;
-  padding: 20px 32px;
+  gap: 14px;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 18px 18px;
+  max-width: var(--max);
+  margin: 0 auto;
 }
 
-.brand {
-  font-weight: 600;
-}
+.nav a { text-decoration: none; }
+
+.hero h1 { line-height: 1.15; margin: 0 0 10px 0; }
+.hero p { max-width: 70ch; }
 
 .grid {
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
 }
 
 .card {
   border: 1px solid #eee;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 14px;
+  padding: 16px;
 }
 
-.kicker {
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: .08em;
-  opacity: .6;
-}
-
-.meta {
-  opacity: .7;
-  font-size: 14px;
-}
-
-.tag {
+.btn {
   display: inline-block;
-  border: 1px solid #ddd;
-  border-radius: 999px;
-  padding: 4px 10px;
-  font-size: 13px;
-  margin-right: 6px;
-}
-
-.cta {
-  border: 1px solid #eee;
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 40px;
+  border: 1px solid #111;
+  border-radius: 12px;
+  padding: 10px 14px;
+  text-decoration: none;
 }

@@ -7,7 +7,7 @@ summary: "Governance-led enterprise and solution architecture for regulated orga
 <div class="hero">
   <p><strong>Soufiane Bouarfa</strong> — Enterprise &amp; Solution Architect</p>
 
-  <h1>Governance-led architecture for regulated, asset-heavy organizations</h1>
+  <h2>Governance-led architecture for regulated, asset-heavy organizations</h2>
 
   <p>
     I help CIOs, enterprise architects, and program directors design and deliver platforms,

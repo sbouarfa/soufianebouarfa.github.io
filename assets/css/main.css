@@ -14,13 +14,12 @@ body {
   padding: 32px 18px;
 }
 
-.site-header, .site-footer {
+.site-header {
   border-bottom: 1px solid #eee;
 }
 
 .site-footer {
   border-top: 1px solid #eee;
-  border-bottom: none;
   padding: 24px 0;
   margin-top: 48px;
   font-size: 14px;
@@ -38,7 +37,7 @@ body {
 
 .nav a { text-decoration: none; }
 
-.hero h1 { line-height: 1.15; margin: 0 0 10px 0; }
+.hero h1, .hero h2 { line-height: 1.15; margin: 0 0 10px 0; }
 .hero p { max-width: 70ch; }
 
 .grid {
@@ -61,3 +60,8 @@ body {
   padding: 10px 14px;
   text-decoration: none;
 }
+
+/* small UX polish */
+.nav a:hover { text-decoration: underline; }
+.btn:hover { background: #111; color: #fff; }
+.btn:focus, .nav a:focus { outline: 2px solid #111; outline-offset: 2px; }

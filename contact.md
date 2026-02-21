@@ -7,8 +7,8 @@ summary: "For consulting, advisory work, speaking, or collaboration."
 
 If you want to discuss an architecture or governance challenge, the quickest way is email.
 
-- **Email:** soufiane@novelinsights.com  
-- **LinkedIn:** https://www.linkedin.com/in/soufianebouarfa/
+- **Email:** [soufiane@novelinsights.com](mailto:soufiane@novelinsights.com)
+- **LinkedIn:** <a href="https://www.linkedin.com/in/soufianebouarfa/" target="_blank" rel="noopener noreferrer">linkedin.com/in/soufianebouarfa</a>
 
 ## What helps in your message
 - Context (organization type and domain)

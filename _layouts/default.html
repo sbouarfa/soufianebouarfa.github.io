@@ -1,12 +1,15 @@
 <!doctype html>
 <html lang="en">
-  {% include head.html %}
+  <head>
+    {% include head.html %}
+  </head>
   <body>
-    {% include header.html %}
-    <main class="container">
-      {{ content }}
-    </main>
-    {% include footer.html %}
-    <script src="/assets/js/main.js" defer></script>
+    <div class="site">
+      {% include header.html %}
+      <main class="container">
+        {{ content }}
+      </main>
+      {% include footer.html %}
+    </div>
   </body>
 </html>

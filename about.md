@@ -5,9 +5,10 @@ permalink: /about/
 summary: "Enterprise & Solution Architect focused on governance-led delivery in regulated environments."
 ---
 
-## About
 
-I’m Dr. Soufiane Bouarfa — an Enterprise Architect, advisor, and founder of Novel Insights.
+I'm Dr. Soufiane Bouarfa — an Enterprise Architect, advisor, and founder of [Novel Insights](https://www.novelinsights.com).
+
+![Dr. Soufiane Bouarfa](/assets/images/about/soufiane.jpg){: style="float: right; margin: 0 0 1rem 1rem; width: 250px; border-radius: 8px;"}
 
 My work sits at the intersection of strategy, architecture, and execution. I help organizations design and govern complex digital systems in environments where reliability, compliance, and long-term impact matter.
 

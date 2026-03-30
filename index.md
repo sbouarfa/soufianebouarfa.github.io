@@ -33,11 +33,3 @@ summary: "Governance-led enterprise and solution architecture for regulated orga
     Essays, frameworks, and case-based insights for executive teams.
   </div>
 </div>
-
-## Quick links
-
-- [About]( /about/ )
-- [Insights]( /insights/ )
-- [Services]( /services/ )
-- [Work]( /work/ )
-- [Contact]( /contact/ )

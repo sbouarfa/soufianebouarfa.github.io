@@ -5,7 +5,7 @@ summary: "Governance-led enterprise and solution architecture for regulated orga
 ---
 
 <section class="hero home-hero">
-  <h1>Enterprise Architecture as a Governance Capability</h1>
+  <h1>Enterprise architecture that delivers through governance</h1>
   <p>Effectively aligning strategy, digital systems, and operational delivery in complex regulated environments.</p>
 </section>
 

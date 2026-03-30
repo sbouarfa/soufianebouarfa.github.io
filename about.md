@@ -11,11 +11,13 @@ I'm Dr. Soufiane Bouarfa — an Enterprise Architect and advisor working at the 
 
 I help organizations design and govern complex digital systems in environments where reliability, compliance, and long-term impact matter.
 
+> "Enterprise Architecture is the discipline that governs the modern socio-technical enterprise by aligning institutional intent, digital design, and operational reality." — From my recent article on Enterprise Architecture
+
 ### <i class="fas fa-brain about-icon"></i> Systems thinking applied to real-world complexity
 
 What differentiates my approach is a foundation in complex socio-technical systems. During my PhD at TU Delft, I studied how large-scale systems behave under uncertainty—focusing on safety, resilience, and coordination in air transportation.
 
-Today, I apply that same systems thinking to enterprise environments, where technology, data, and organisations interact in equally complex ways.
+Today, I apply that same systems thinking to enterprise environments, where technology, data, and organisations interact in equally complex ways. Enterprises are not merely collections of processes or systems—they are networks of people operating within institutional structures, using digital technologies to deliver value across physical, digital, and institutional domains.
 
 ### <i class="fas fa-cogs about-icon"></i> From strategy to execution
 
@@ -75,7 +77,7 @@ I see architecture not as documentation, but as a decision-making capability.
 
 In digital organizations, architecture defines how decisions are made, how systems evolve, and how value is delivered at scale. My goal is to make that structure explicit, coherent, and actionable.
 
-Ultimately, I see architecture as a leadership instrument—one that brings clarity, alignment, and direction in increasingly complex organizations.
+Ultimately, I see architecture as a leadership instrument—one that brings clarity, alignment, and direction in increasingly complex organizations. As I explore in my writing, Enterprise Architecture governs the modern socio-technical enterprise by making trade-offs visible and ensuring that institutional intent translates into operational reality through deliberate design.
 
 ## <i class="fas fa-user about-icon"></i> Beyond work
 
@@ -83,4 +85,5 @@ Outside of work, I enjoy spending time with my family and reflecting on how tech
 
 <div style="text-align: center; margin-top: 2rem;">
 <a href="/contact/" class="btn">Get in Touch</a>
+<a href="https://www.linkedin.com/in/soufianebouarfa/" class="btn" style="margin-left: 1rem;">LinkedIn</a>
 </div>

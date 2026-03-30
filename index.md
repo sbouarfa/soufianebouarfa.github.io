@@ -9,6 +9,10 @@ summary: "Governance-led enterprise and solution architecture for regulated orga
   <p>Effectively aligning strategy, digital systems, and operational delivery in complex regulated environments.</p>
 </section>
 
+<div class="hero-image" style="text-align:center; margin: 2rem 0;">
+  <img src="/assets/images/home-photo.png" alt="Home hero photo" style="width:100%; max-width:800px; height:auto; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.15);" />
+</div>
+
 ## What you'll find here
 
 <div class="grid">

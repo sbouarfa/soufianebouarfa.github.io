@@ -81,3 +81,47 @@ blockquote {
   padding: 1rem;
   border-radius: 4px;
 }
+
+.insights-hero {
+  background: #f4f7fb;
+  border: 1px solid #e1e8f3;
+  border-radius: 12px;
+  padding: 22px 26px;
+  margin-bottom: 26px;
+}
+
+.insights-hero h1 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.01em;
+  color: #0b2f52;
+}
+
+.insights-hero p {
+  max-width: 70ch;
+  margin: 0.55rem 0;
+  color: #2a3e56;
+  line-height: 1.7;
+}
+
+.insights-featured {
+  background: #fff;
+  border: 1px solid #e5ebf2;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 18px rgba(25, 43, 67, 0.06);
+}
+
+.insights-featured h2 {
+  color: #0c2b57;
+}
+
+.insights-featured .meta,
+.insights-featured li {
+  color: #3b4f63;
+}
+
+.insights-featured a.btn {
+  margin-top: 14px;
+  display: inline-block;
+}

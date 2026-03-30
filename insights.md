@@ -13,18 +13,7 @@ Here, I share practical frameworks, strategic insights, and case studies—contr
 
 ---
 
-## Latest Articles
-
-<div class="grid">
-  {% for post in site.posts %}
-    <div class="card">
-      <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
-      <div class="meta">{{ post.summary }}</div>
-    </div>
-  {% endfor %}
-</div>
-
-## Work in Progress
+## Featured Work
 
 ### Enterprise Architecture: Governing the Modern Socio-Technical Enterprise
 *Status: In development*
@@ -42,4 +31,13 @@ Here, I share practical frameworks, strategic insights, and case studies—contr
 
 ---
 
-*This section will be updated once the article is published.*
+## Published Articles
+
+<div class="grid">
+  {% for post in site.posts %}
+    <div class="card">
+      <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
+      <div class="meta">{{ post.summary }}</div>
+    </div>
+  {% endfor %}
+</div>

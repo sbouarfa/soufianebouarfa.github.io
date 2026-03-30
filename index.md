@@ -5,14 +5,8 @@ summary: "Governance-led enterprise and solution architecture for regulated orga
 ---
 
 <section class="hero home-hero">
-  <h1>Governance-led architecture for regulated, asset-heavy organizations</h1>
+  <h1>Governance-led enterprise architecture that delivers in complex environments</h1>
   <p>Helping CIOs, architects and program leaders design resilient platforms, information governance, and transformation roadmaps that hold under real constraints.</p>
-
-  <div class="profile-stats">
-    <div><strong>15+</strong><span>Years in architecture</span></div>
-    <div><strong>30+</strong><span>Programs delivered</span></div>
-    <div><strong>4</strong><span>Regulated industries</span></div>
-  </div>
 
   <p class="hero-actions">
     <a class="btn btn-primary" href="/services/">How I help</a>

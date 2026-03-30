@@ -48,6 +48,66 @@ body {
   margin-bottom: 1.4rem;
 }
 
+.wow-hero {
+  display: grid;
+  grid-template-columns: 1fr minmax(280px, 420px);
+  gap: 20px;
+  align-items: center;
+  padding: 34px;
+}
+
+.wow-left .label {
+  color: #0e3f77;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  font-size: 0.85rem;
+}
+
+.wow-left h1 {
+  margin-top: 0;
+  font-size: 2.3rem;
+  line-height: 1.17;
+  color: #0c2d57;
+}
+
+.wow-left p {
+  color: #32475d;
+  font-size: 1.05rem;
+  margin: 0.9rem 0 1.3rem;
+  max-width: 68ch;
+}
+
+.hero-actions .btn { margin-right: 0.8rem; }
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.hero-badges span {
+  background: #ffffff;
+  border: 1px solid #d9e6f3;
+  border-radius: 999px;
+  color: #1f4d76;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.86rem;
+}
+
+.wow-right img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(15, 29, 53, 0.12);
+}
+
+@media (max-width: 900px) {
+  .wow-hero { grid-template-columns: 1fr; }
+  .wow-right img { margin-top: 1rem; }
+}
+
 .home-hero h1 {
   margin-top: 0;
   font-size: 2.1rem;

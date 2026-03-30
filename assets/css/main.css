@@ -41,11 +41,12 @@ body {
 .hero p { max-width: 70ch; }
 
 .home-hero {
-  background: linear-gradient(135deg, #f6f8ff 0%, #e9f1fc 100%);
-  border: 1px solid #d9e4f1;
-  border-radius: 16px;
-  padding: 28px;
-  margin-bottom: 1.4rem;
+  background: linear-gradient(135deg, #eef4fb 0%, #dfeaf8 100%);
+  border: 1px solid #d1dff0;
+  border-radius: 18px;
+  padding: 30px;
+  margin-bottom: 24px;
+  box-shadow: 0 12px 30px rgba(15, 29, 53, 0.085);
 }
 
 .wow-hero {

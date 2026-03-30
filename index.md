@@ -4,41 +4,40 @@ title: "Enterprise architecture that delivers through governance"
 summary: "Governance-led enterprise and solution architecture for regulated organizations."
 ---
 
-<section class="hero home-hero wow-hero">
-  <div class="wow-left">
-    <p class="label">Enterprise architecture for complex, regulated systems</p>
-    <h1>Governance-led architecture that turns strategy into predictable delivery</h1>
-    <p>Particularly effective for asset-heavy organizations facing risk, compliance, legacy, and operational continuity challenges.</p>
+<section class="hero home-hero">
+  <h1>Enterprise Architecture as a Governance Capability</h1>
+  <p>Effectively aligning strategy, digital systems, and operational delivery in complex regulated environments.</p>
 
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="/services/">How I help</a>
-      <a class="btn" href="/work/">See engagements</a>
-    </div>
-
-    <div class="hero-badges">
-      <span>✔ Architecture is decision-making capability</span>
-      <span>✔ Governance with executable guardrails</span>
-      <span>✔ Designed for safety-critical systems</span>
-    </div>
-  </div>
-  <div class="wow-right">
-    <img src="/assets/images/insights-hero.svg" alt="Architectural systems visualization" />
-  </div>
+  <p class="hero-actions">
+    <a class="btn btn-primary" href="/services/">How I help</a>
+    <a class="btn" href="/work/">See engagements</a>
+    <a class="btn" href="/about/">About</a>
+    <a class="btn" href="/insights/">Insights</a>
+    <a class="btn" href="/contact/">Contact</a>
+  </p>
 </section>
 
-## Focus areas
+## What you'll find here
 
 <div class="grid">
   <div class="card">
-    <strong>Enterprise Architecture</strong><br/>
-    Strategic alignment, roadmaps, capability models.
+    <strong>Practical architecture leadership</strong><br/>
+    Governance, decision-making, and risk-aware transformation.
   </div>
   <div class="card">
-    <strong>Information Governance</strong><br/>
-    Document platforms, lifecycle, compliance alignment.
+    <strong>Systems and socio-technical clarity</strong><br/>
+    Connecting people, processes, data, and platforms.
   </div>
   <div class="card">
-    <strong>Architecture Rationalisation</strong><br/>
-    Tooling selection, platform decisions, migration strategy.
+    <strong>Thought leadership and direction</strong><br/>
+    Essays, frameworks, and case-based insights for executive teams.
   </div>
 </div>
+
+## Quick links
+
+- [About]( /about/ )
+- [Insights]( /insights/ )
+- [Services]( /services/ )
+- [Work]( /work/ )
+- [Contact]( /contact/ )

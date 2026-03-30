@@ -6,6 +6,7 @@ permalink: /insights/
 ---
 
 <div class="insights-hero">
+  <img src="/assets/images/insights-hero.svg" alt="Enterprise Architecture insights hero" style="width: 100%; max-height: 280px; object-fit: cover; border-radius: 12px;" />
   <h1>Enterprise Architecture Insights</h1>
   <p>Drawing from experience in regulated industries, I explore how organizations can effectively govern complex digital systems at the intersection of strategy, technology, and operations.</p>
   <p>Here, I share practical frameworks, strategic insights, and case studies—contributing to the broader community of architects, leaders, and practitioners tackling similar challenges.</p>

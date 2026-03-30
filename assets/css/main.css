@@ -70,3 +70,14 @@ body {
 .about-icon { color: #007acc; margin-right: 8px; }
 .card h4 { margin-top: 0; }
 .card i { color: #007acc; }
+
+blockquote {
+  border-left: 4px solid #007acc;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #555;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 4px;
+}

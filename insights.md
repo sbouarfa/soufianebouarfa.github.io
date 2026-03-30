@@ -5,11 +5,11 @@ summary: "Essays and reflections on enterprise architecture, governance, and tra
 permalink: /insights/
 ---
 
-Enterprise architecture is not about diagrams.
+Enterprise Architecture Insights
 
-It is about decision-making under constraints.
+Drawing from experience in regulated industries, I explore how organizations can effectively govern complex digital systems at the intersection of strategy, technology, and operations.
 
-This journal captures structured reflections, models, and lessons from complex architecture programs in government, aviation, and other regulated environments.
+Here, I share practical frameworks, strategic insights, and case studies—contributing to the broader community of architects, leaders, and practitioners tackling similar challenges.
 
 ---
 

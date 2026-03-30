@@ -4,21 +4,21 @@ title: "Enterprise architecture that delivers through governance"
 summary: "Governance-led enterprise and solution architecture for regulated organizations."
 ---
 
-<div class="hero">
-  <p><strong>Soufiane Bouarfa</strong> — Enterprise &amp; Solution Architect</p>
+<section class="hero home-hero">
+  <h1>Governance-led architecture for regulated, asset-heavy organizations</h1>
+  <p>Helping CIOs, architects and program leaders design resilient platforms, information governance, and transformation roadmaps that hold under real constraints.</p>
 
-  <h2>Governance-led architecture for regulated, asset-heavy organizations</h2>
+  <div class="profile-stats">
+    <div><strong>15+</strong><span>Years in architecture</span></div>
+    <div><strong>30+</strong><span>Programs delivered</span></div>
+    <div><strong>4</strong><span>Regulated industries</span></div>
+  </div>
 
-  <p>
-    I help CIOs, enterprise architects, and program directors design and deliver platforms,
-    information governance structures, and transformation roadmaps that hold under real-world constraints.
-  </p>
-
-  <p>
-    <a class="btn" href="/services/">How I help</a>
+  <p class="hero-actions">
+    <a class="btn btn-primary" href="/services/">How I help</a>
     <a class="btn" href="/work/">See engagements</a>
   </p>
-</div>
+</section>
 
 ## Focus areas
 

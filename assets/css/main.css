@@ -40,6 +40,45 @@ body {
 .hero h1, .hero h2 { line-height: 1.15; margin: 0 0 10px 0; }
 .hero p { max-width: 70ch; }
 
+.home-hero {
+  background: linear-gradient(135deg, #f6f8ff 0%, #e9f1fc 100%);
+  border: 1px solid #d9e4f1;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 1.4rem;
+}
+
+.home-hero h1 {
+  margin-top: 0;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #103a6a;
+}
+
+.home-hero p { color: #2a4f71; margin: 0.85rem 0 1rem; }
+
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.profile-stats div {
+  background: #ffffff;
+  border: 1px solid #e3eaf5;
+  border-radius: 10px;
+  padding: 10px 14px;
+  text-align: center;
+}
+
+.profile-stats strong { display: block; color: #115188; font-size: 1rem; }
+.profile-stats span { color: #4c6a85; font-size: 0.85rem; }
+
+.hero-actions .btn { margin-right: 0.9rem; }
+
+.btn-primary { background: #0b3f75; color: #fff; border: none; }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

@@ -30,14 +30,3 @@ Here, I share practical frameworks, strategic insights, and case studies—contr
 *Read my LinkedIn post about the article: [Enterprise Architecture discussions often start with frameworks...](https://www.linkedin.com/feed/update/urn:li:activity:your-post-id/)*
 
 ---
-
-## Published Articles
-
-<div class="grid">
-  {% for post in site.posts %}
-    <div class="card">
-      <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
-      <div class="meta">{{ post.summary }}</div>
-    </div>
-  {% endfor %}
-</div>

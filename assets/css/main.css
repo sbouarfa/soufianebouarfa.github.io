@@ -65,3 +65,8 @@ body {
 .nav a:hover { text-decoration: underline; }
 .btn:hover { background: #111; color: #fff; }
 .btn:focus, .nav a:focus { outline: 2px solid #111; outline-offset: 2px; }
+
+/* About page enhancements */
+.about-icon { color: #007acc; margin-right: 8px; }
+.card h4 { margin-top: 0; }
+.card i { color: #007acc; }

@@ -8,13 +8,9 @@ summary: "Governance-led enterprise and solution architecture for regulated orga
   <h1>Enterprise Architecture as a Governance Capability</h1>
   <p>Effectively aligning strategy, digital systems, and operational delivery in complex regulated environments.</p>
 
-  <p class="hero-actions">
-    <a class="btn btn-primary" href="/services/">How I help</a>
-    <a class="btn" href="/work/">See engagements</a>
-    <a class="btn" href="/about/">About</a>
-    <a class="btn" href="/insights/">Insights</a>
-    <a class="btn" href="/contact/">Contact</a>
-  </p>
+  <div class="hero-visual">
+    <img src="/assets/images/home-hero.svg" alt="Enterprise Architecture governance diagram" />
+  </div>
 </section>
 
 ## What you'll find here

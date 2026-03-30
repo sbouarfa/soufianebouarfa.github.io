@@ -49,6 +49,34 @@ body {
   box-shadow: 0 12px 30px rgba(15, 29, 53, 0.085);
 }
 
+.home-hero h1 {
+  margin-top: 0;
+  font-size: 2.2rem;
+  color: #0c2d57;
+  text-align: center;
+}
+
+.home-hero p {
+  color: #2a4f71;
+  text-align: center;
+  margin: 0.8rem 0 1.5rem;
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-visual {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.hero-visual img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(15, 29, 53, 0.1);
+}
+
 .wow-hero {
   display: grid;
   grid-template-columns: 1fr minmax(280px, 420px);

@@ -125,3 +125,78 @@ blockquote {
   margin-top: 14px;
   display: inline-block;
 }
+
+.about-hero {
+  background: linear-gradient(135deg, #f7faff 0%, #eef4fb 100%);
+  border: 1px solid #dce7f5;
+  border-radius: 17px;
+  padding: 28px;
+  margin-bottom: 30px;
+}
+
+.about-hero h1 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #0c2e58;
+}
+
+.about-hero p {
+  color: #264163;
+  margin: 0.8rem 0;
+  line-height: 1.6;
+}
+
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.profile-stats div {
+  background: #ffffff;
+  border: 1px solid #e4ecf6;
+  border-radius: 10px;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.profile-stats strong {
+  display: block;
+  color: #0d3b6a;
+  font-size: 1.1rem;
+}
+
+.profile-stats span {
+  color: #4d6a86;
+  font-size: 0.88rem;
+}
+
+.about-cta {
+  margin-top: 1.25rem;
+}
+
+.about-cta .btn {
+  margin-right: 0.7rem;
+}
+
+.btn-primary {
+  background: #0b3f75;
+  color: #fff;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #0d5ea6;
+}
+
+.grid .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(17, 33, 58, 0.12);
+}
+
+.grid .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+

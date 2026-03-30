@@ -5,7 +5,19 @@ permalink: /about/
 summary: "Enterprise Architect operating at the intersection of strategy, architecture, and execution in complex, regulated environments."
 ---
 
-I'm Dr. Soufiane Bouarfa — an Enterprise Architect and advisor working at the intersection of strategy, architecture, and execution.
+<section class="about-hero">
+  <h1>About</h1>
+  <p>I'm Dr. Soufiane Bouarfa — an Enterprise Architect and advisor working at the intersection of strategy, architecture, and execution.</p>
+  <div class="profile-stats">
+    <div><strong>15+ years</strong><span>Architecting complex systems</span></div>
+    <div><strong>12+</strong><span>Large-scale transformation programs</span></div>
+    <div><strong>7</strong><span>Regulated sectors impacted</span></div>
+  </div>
+  <div class="about-cta">
+    <a class="btn btn-primary" href="/contact/">Talk with me</a>
+    <a class="btn" href="/insights/">Explore insights</a>
+  </div>
+</section>
 
 ![Dr. Soufiane Bouarfa](/assets/images/about/soufiane.jpg){: style="float: right; margin: 0 0 1rem 1rem; width: 250px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" }
 

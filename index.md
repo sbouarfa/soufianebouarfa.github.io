@@ -9,14 +9,7 @@ summary: "I am Soufiane Bouarfa, an Enterprise and Solution Architect helping re
     <h1>I help governments and large organizations design and govern complex digital systems.</h1>
     <p>From strategy to execution, I translate complexity into structured architectures that ensure compliance, scalability, and long-term impact.</p>
     <div class="hero-actions" style="margin-bottom: 1rem;">
-      <a class="btn btn-primary" href="/contact/">Work with me</a>
       <a class="btn" href="/insights/">Explore insights</a>
-    </div>
-    <div class="hero-badges">
-      <span>Rijkswaterstaat</span>
-      <span>Airbus</span>
-      <span>Shell</span>
-      <span>Government programs</span>
     </div>
   </div>
   <div class="wow-right">

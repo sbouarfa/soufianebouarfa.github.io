@@ -3,17 +3,14 @@ layout: page
 summary: "I am Soufiane Bouarfa, an Enterprise and Solution Architect helping regulated organizations deliver through governance."
 ---
 
-<section class="hero home-hero wow-hero">
+<section class="hero home-hero">
   <div class="wow-left">
-    <p class="label">Enterprise Architecture Advisor</p>
+    <p class="label">Enterprise Architect</p>
     <h1>I help governments and large organizations design and govern complex digital systems.</h1>
     <p>From strategy to execution, I translate complexity into structured architectures that ensure compliance, scalability, and long-term impact.</p>
     <div class="hero-actions" style="margin-bottom: 1rem;">
       <a class="btn" href="/insights/">Explore insights</a>
     </div>
-  </div>
-  <div class="wow-right">
-    <img src="/assets/images/about/soufiane.jpg" alt="Dr. Soufiane Bouarfa" />
   </div>
 </section>
 
@@ -41,6 +38,8 @@ I specialize in environments where architecture is not optional, where complianc
 </div>
 
 > "Enterprise Architecture is the discipline that governs the modern socio-technical enterprise by aligning institutional intent, digital design, and operational reality." — From my recent article on Enterprise Architecture
+
+![Dr. Soufiane Bouarfa](/assets/images/about/soufiane.jpg){: style="float: right; margin: 0 0 1rem 1rem; width: 250px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" }
 
 **Architecture is not about systems — it is about governing how people, data, and technology create value.**
 

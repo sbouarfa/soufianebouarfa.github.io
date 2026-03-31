@@ -1,14 +1,7 @@
 ---
 layout: page
-title: "Enterprise architecture that delivers through governance"
 summary: "I am Soufiane Bouarfa, an Enterprise and Solution Architect helping regulated organizations deliver through governance."
 ---
-
-<section class="hero home-hero">
-  <p>I am Soufiane Bouarfa, an Enterprise and Solution Architect helping CIOs and program leaders align strategy, digital systems, and operational delivery in complex regulated environments.</p>
-</section>
-
-## About
 
 I'm Dr. Soufiane Bouarfa — an Enterprise Architect and advisor working at the intersection of strategy, architecture, and execution.
 

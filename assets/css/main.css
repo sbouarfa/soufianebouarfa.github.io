@@ -127,7 +127,10 @@ body {
 }
 
 .wow-right img {
-  width: 100%;
+  width: 82%;
+  max-width: 300px;
+  margin-left: auto;
+  display: block;
   border-radius: 14px;
   box-shadow: 0 12px 30px rgba(15, 29, 53, 0.12);
   animation: float 8s ease-in-out infinite;
@@ -153,7 +156,10 @@ body {
 
 @media (max-width: 900px) {
   .wow-hero { grid-template-columns: 1fr; }
-  .wow-right img { margin-top: 1rem; }
+  .wow-right img {
+    width: min(72%, 260px);
+    margin: 1rem auto 0;
+  }
 }
 
 .home-hero h1 {
@@ -346,4 +352,3 @@ blockquote {
 .grid .card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-

@@ -3,18 +3,33 @@ layout: page
 summary: "I am Soufiane Bouarfa, an Enterprise and Solution Architect helping regulated organizations deliver through governance."
 ---
 
-<section class="hero home-hero">
-  <div class="wow-left">
-    <p class="label">Enterprise Architect</p>
-    <h1>I help governments and large organizations design and govern complex digital systems.</h1>
-    <p>From strategy to execution, I translate complexity into structured architectures that ensure compliance, scalability, and long-term impact.</p>
-    <div class="hero-actions" style="margin-bottom: 1rem;">
-      <a class="btn" href="/insights/">Explore insights</a>
-    </div>
-  </div>
-</section>
+I'm Dr. Soufiane Bouarfa — an Enterprise Architect and advisor working at the intersection of strategy, architecture, and execution.
 
-I specialize in environments where architecture is not optional, where compliance, legacy systems, and operational continuity must be balanced with transformation.
+<div style="margin-bottom: 1.5rem;">
+  <a class="btn" href="/insights/">Explore insights</a>
+</div>
+
+![Dr. Soufiane Bouarfa](/assets/images/about/soufiane.jpg){: style="float: right; margin: 0 0 1rem 1rem; width: 250px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" }
+
+I help organizations design and govern complex digital systems in environments where reliability, compliance, and long-term impact matter.
+
+> "Enterprise Architecture is the discipline that governs the modern socio-technical enterprise by aligning institutional intent, digital design, and operational reality." — From my recent article on Enterprise Architecture
+
+### <i class="fas fa-brain about-icon"></i> Systems thinking applied to real-world complexity
+
+What differentiates my approach is a foundation in complex socio-technical systems. During my PhD at TU Delft, I studied how large-scale systems behave under uncertainty, focusing on safety, resilience, and coordination in air transportation.
+
+Today, I apply that same systems thinking to enterprise environments, where technology, data, and organisations interact in equally complex ways. Enterprises are not merely collections of processes or systems. They are networks of people operating within institutional structures, using digital technologies to deliver value across physical, digital, and institutional domains.
+
+### <i class="fas fa-cogs about-icon"></i> From strategy to execution
+
+I specialize in translating strategy into coherent architectures and governance structures that enable real delivery across platforms, data, and operating models.
+
+My experience spans government, aviation, and industry, supporting organizations such as Rijkswaterstaat, Airbus, and Shell on high-impact transformation initiatives.
+
+My work typically involves shaping critical platforms, information governance structures, and architectural direction in programs where decisions have long-term operational and organizational impact.
+
+For example, I have worked on large-scale information governance and platform transformation initiatives within government environments, where architecture needed to balance compliance, legacy systems, and operational continuity.
 
 ## <i class="fas fa-tools about-icon"></i> What I Do
 
@@ -36,28 +51,6 @@ I specialize in environments where architecture is not optional, where complianc
 <p>Connect executive intent with technical reality</p>
 </div>
 </div>
-
-> "Enterprise Architecture is the discipline that governs the modern socio-technical enterprise by aligning institutional intent, digital design, and operational reality." — From my recent article on Enterprise Architecture
-
-![Dr. Soufiane Bouarfa](/assets/images/about/soufiane.jpg){: style="float: right; margin: 0 0 1rem 1rem; width: 250px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" }
-
-**Architecture is not about systems — it is about governing how people, data, and technology create value.**
-
-### <i class="fas fa-brain about-icon"></i> Systems thinking applied to real-world complexity
-
-What differentiates my approach is a foundation in complex socio-technical systems. During my PhD at TU Delft, I studied how large-scale systems behave under uncertainty, focusing on safety, resilience, and coordination in air transportation.
-
-Today, I apply that same systems thinking in enterprise environments where technology, data, and organisations interact in equally complex ways. Enterprises are not just systems. They are socio-technical networks of people, data, and technology, and I design architectures that make this complexity manageable and actionable.
-
-### <i class="fas fa-cogs about-icon"></i> From strategy to execution
-
-I translate strategy into coherent architectures and governance structures that enable real delivery across platforms, data, and operating models.
-
-My experience spans government, aviation, and industry, supporting organizations such as Rijkswaterstaat, Airbus, and Shell on high-impact transformation initiatives.
-
-My work typically involves shaping critical platforms, information governance structures, and architectural direction in programs where decisions have long-term operational and organizational impact.
-
-For example, I have worked on large-scale information governance and platform transformation initiatives within government environments, where architecture needed to balance compliance, legacy systems, and operational continuity.
 
 ## <i class="fas fa-target about-icon"></i> Focus Areas
 
@@ -84,17 +77,15 @@ For example, I have worked on large-scale information governance and platform tr
 
 I see architecture not as documentation, but as a decision-making capability.
 
-In digital organizations, architecture defines how decisions are made, how systems evolve, and how value is delivered at scale. My goal is to make that structure explicit, coherent, and actionable through clear governance and practical design.
+In digital organizations, architecture defines how decisions are made, how systems evolve, and how value is delivered at scale. My goal is to make that structure explicit, coherent, and actionable.
+
+Ultimately, I see architecture as a leadership instrument, one that brings clarity, alignment, and direction in increasingly complex organizations. As I explore in my writing, Enterprise Architecture governs the modern socio-technical enterprise by making trade-offs visible and ensuring that institutional intent translates into operational reality through deliberate design.
 
 ## <i class="fas fa-user about-icon"></i> Beyond work
 
 Outside of work, I enjoy spending time with my family and reflecting on how technology, systems, and society evolve over time.
 
-## Working on a complex digital transformation?
-
-Let's bring structure to it.
-
-<div style="text-align: center; margin-top: 1rem;">
+<div style="text-align: center; margin-top: 2rem;">
 <a href="/contact/" class="btn">Get in Touch</a>
 <a href="https://www.linkedin.com/in/soufianebouarfa/" class="btn" style="margin-left: 1rem;">LinkedIn</a>
 </div>

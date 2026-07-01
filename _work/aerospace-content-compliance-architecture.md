@@ -6,8 +6,6 @@ tags: ["Information Governance", "Enterprise Architecture", "Compliance", "Platf
 order: 1
 ---
 
-# Digital Content & Compliance Architecture for Aerospace Engineering
-
 ## Context
 A major aerospace engineering organization required a structured digital content and compliance architecture to support complex engineering documentation, certification processes, and long-term traceability within a strictly regulated environment.
 

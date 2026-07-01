@@ -3,15 +3,26 @@ layout: page
 summary: "I am Soufiane Bouarfa, an Enterprise and Solution Architect helping regulated organizations deliver through governance."
 ---
 
-I'm Dr. Soufiane Bouarfa — an Enterprise Architect and advisor working at the intersection of strategy, architecture, and execution.
-
-<div style="margin-bottom: 1.5rem;">
-  <a class="btn" href="/insights/">Explore insights</a>
+<div class="hero-editorial">
+  <div class="hero-text">
+    <span class="hero-kicker">Enterprise &amp; Solution Architect</span>
+    <h1>Governance-led architecture for organizations that can't afford to get it wrong.</h1>
+    <p class="lede">I'm Dr. Soufiane Bouarfa — an Enterprise Architect and advisor working at the intersection of strategy, architecture, and execution, helping organizations design and govern complex digital systems where reliability, compliance, and long-term impact matter.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="/contact/">Get in Touch</a>
+      <a class="btn btn-outline" href="/insights/">Explore Insights</a>
+    </div>
+    <div class="hero-badges">
+      <span>PhD, TU Delft</span>
+      <span>Rijkswaterstaat</span>
+      <span>Airbus</span>
+      <span>Shell</span>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="/assets/images/about/soufiane.jpg" alt="Dr. Soufiane Bouarfa" />
+  </div>
 </div>
-
-![Dr. Soufiane Bouarfa](/assets/images/about/soufiane.jpg){: style="float: right; margin: 0 0 1rem 1rem; width: 250px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" }
-
-I help organizations design and govern complex digital systems in environments where reliability, compliance, and long-term impact matter.
 
 > "Enterprise Architecture is the discipline that governs the modern socio-technical enterprise by aligning institutional intent, digital design, and operational reality." — From my recent article on Enterprise Architecture
 
@@ -52,7 +63,7 @@ For example, I have worked on large-scale information governance and platform tr
 </div>
 </div>
 
-## <i class="fas fa-target about-icon"></i> Focus Areas
+## <i class="fas fa-bullseye about-icon"></i> Focus Areas
 
 <div class="grid">
 <div class="card">
@@ -86,6 +97,6 @@ Ultimately, I see architecture as a leadership instrument, one that brings clari
 Outside of work, I enjoy spending time with my family and reflecting on how technology, systems, and society evolve over time.
 
 <div style="text-align: center; margin-top: 2rem;">
-<a href="/contact/" class="btn">Get in Touch</a>
-<a href="https://www.linkedin.com/in/soufianebouarfa/" class="btn" style="margin-left: 1rem;">LinkedIn</a>
+<a href="/contact/" class="btn btn-primary">Get in Touch</a>
+<a href="https://www.linkedin.com/in/soufianebouarfa/" class="btn btn-outline" style="margin-left: 1rem;">LinkedIn</a>
 </div>

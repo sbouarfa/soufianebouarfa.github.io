@@ -84,6 +84,29 @@ For example, I have worked on large-scale information governance and platform tr
 </div>
 </div>
 
+## <i class="fas fa-certificate about-icon"></i> Credentials & Certifications
+
+<div class="grid">
+<div class="card credential-card">
+<img src="/assets/images/credentials/togaf-foundation.png" alt="The Open Group Certified: TOGAF Enterprise Architecture Foundation badge" />
+<h4>TOGAF&reg; Enterprise Architecture Foundation</h4>
+<p class="credential-issuer">The Open Group</p>
+<a class="btn btn-outline btn-sm" href="https://www.credly.com/badges/84cd428b-54d9-4b2f-b356-57974cc03fa1" target="_blank" rel="noopener">Verify credential</a>
+</div>
+<div class="card credential-card">
+<img src="/assets/images/credentials/togaf-practitioner.png" alt="The Open Group Certified: TOGAF Enterprise Architecture Practitioner badge" />
+<h4>TOGAF&reg; Enterprise Architecture Practitioner</h4>
+<p class="credential-issuer">The Open Group</p>
+<a class="btn btn-outline btn-sm" href="https://www.credly.com/badges/ac3ba513-5d56-4980-8ec6-3c48a70a9159" target="_blank" rel="noopener">Verify credential</a>
+</div>
+<div class="card credential-card">
+<img src="/assets/images/credentials/psm1.png" alt="Scrum.org Professional Scrum Master I (PSM I) badge" />
+<h4>Professional Scrum Master&trade; I (PSM&nbsp;I)</h4>
+<p class="credential-issuer">Scrum.org</p>
+<a class="btn btn-outline btn-sm" href="https://www.credly.com/badges/0edba9e3-c840-4b4b-8a9d-dd28427cd924" target="_blank" rel="noopener">Verify credential</a>
+</div>
+</div>
+
 ## <i class="fas fa-eye about-icon"></i> Perspective
 
 I see architecture not as documentation, but as a decision-making capability.

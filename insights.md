@@ -30,8 +30,6 @@ permalink: /insights/
     <li>Architecture as a governance discipline</li>
     <li>AI's impact on architectural responsibility</li>
   </ul>
-
-  <p><a class="btn" href="https://www.linkedin.com/feed/update/urn:li:activity:your-post-id/">Read related LinkedIn discussion</a></p>
 </div>
 
 ---

@@ -11,7 +11,7 @@ permalink: /insights/
   <p>Here, I share practical frameworks, strategic insights, and case studies—contributing to the broader community of architects, leaders, and practitioners tackling similar challenges.</p>
 </div>
 
-## Featured Work
+## Featured Article
 
 <div class="insights-featured">
   <h2>Enterprise Architecture: Governing the Modern Socio-Technical Enterprise</h2>

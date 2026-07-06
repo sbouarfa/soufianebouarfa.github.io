@@ -36,7 +36,7 @@ def iso(dt):
 
 
 def week_ranges():
-    today = datetime.datetime.utcnow().date()
+    today = datetime.datetime.now(datetime.timezone.utc).date()
     # most recent full Mon-Sun week that ended before today
     last_monday = today - datetime.timedelta(days=today.weekday() + 7)
     this_start = last_monday

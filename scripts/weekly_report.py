@@ -28,6 +28,15 @@ BORDER = "#e6ddc8"
 GOOD = "#0ca30c"
 BAD = "#d03b3b"
 
+DIRECT_LABEL = "Direct / unknown"
+SIZE_LABELS = {
+    "phone": "Phone",
+    "tablet": "Tablet",
+    "desktop": "Desktop",
+    "desktophd": "Desktop (HD+)",
+    "unknown": "Unknown",
+}
+
 BAR_MAX_PX = 280
 
 
@@ -70,12 +79,15 @@ def total_and_daily(start, end):
 def top_list(page, start, end, limit=10):
     data = get(f"stats/{page}", start, end, limit=limit)
     key = "hits" if page == "hits" else "stats"
-    return [(item.get("path") or item.get("name"), item["count"]) for item in data[key]]
+    return [
+        (item.get("path") or item.get("name") or DIRECT_LABEL, item["count"])
+        for item in data[key]
+    ]
 
 
 def top_locations(start, end, limit=10):
     data = get("stats/locations", start, end, limit=limit)
-    return [(item["name"], item["id"], item["count"]) for item in data["stats"]]
+    return [(item["name"] or "Unknown", item["id"], item["count"]) for item in data["stats"]]
 
 
 def top_shares(page, start, end, top_n=5):
@@ -85,9 +97,13 @@ def top_shares(page, start, end, top_n=5):
     sample_total = sum(item["count"] for item in stats)
     if sample_total == 0:
         return []
+    if page == "sizes":
+        labels = [SIZE_LABELS.get(item["id"], item["id"]) for item in stats]
+    else:
+        labels = [item.get("name") or DIRECT_LABEL for item in stats]
     return [
-        (item["name"], round(item["count"] / sample_total * 100))
-        for item in stats[:top_n]
+        (label, round(item["count"] / sample_total * 100))
+        for label, item in list(zip(labels, stats))[:top_n]
     ]
 
 

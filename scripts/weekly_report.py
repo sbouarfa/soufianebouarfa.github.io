@@ -108,19 +108,22 @@ def delta_badge(current, previous):
     return "&#8212; 0%", MUTED
 
 
-def bar_row(label, count, max_count, href=None):
+def bar_row(label, count, max_count, href=None, color=NAVY, share_of=None):
     width = max(4, round(BAR_MAX_PX * count / max_count)) if max_count else 4
     label_html = f'<a href="{href}" style="color:{INK};text-decoration:none;">{label}</a>' if href else label
+    share_html = ""
+    if share_of:
+        share_html = f' <span style="color:{MUTED};">&middot; {round(count / share_of * 100)}%</span>'
     return f"""
     <tr>
       <td style="padding:6px 0;font-size:13px;color:{INK};font-family:system-ui,-apple-system,'Segoe UI',sans-serif;">
         {label_html}
         <div style="height:8px;border-radius:4px;background:{BORDER};width:{BAR_MAX_PX}px;margin-top:4px;">
-          <div style="height:8px;border-radius:4px;background:{NAVY};width:{width}px;"></div>
+          <div style="height:8px;border-radius:4px;background:{color};width:{width}px;"></div>
         </div>
       </td>
       <td style="padding:6px 0 6px 12px;font-size:13px;color:{MUTED};text-align:right;vertical-align:top;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;white-space:nowrap;">
-        {count}
+        {count}{share_html}
       </td>
     </tr>"""
 
@@ -164,13 +167,18 @@ def chips_section(title, items):
     </tr>"""
 
 
-def section(title, rows, base_url=None):
+def section(title, rows, base_url=None, color=NAVY, share_of=None):
     if not rows:
         rows_html = f'<tr><td style="padding:6px 0;font-size:13px;color:{MUTED};">No data.</td></tr>'
     else:
         max_count = max(c for _, c in rows)
         rows_html = "".join(
-            bar_row(label, c, max_count, href=(base_url.rstrip("/") + label) if base_url else None)
+            bar_row(
+                label, c, max_count,
+                href=(base_url.rstrip("/") + label) if base_url else None,
+                color=color,
+                share_of=share_of,
+            )
             for label, c in rows
         )
     return f"""
@@ -184,12 +192,39 @@ def section(title, rows, base_url=None):
     </tr>"""
 
 
+def highlight_card(label, value):
+    return f"""
+        <td width="33%" valign="top" style="padding:4px;">
+          <div style="background:{CREAM};border:1px solid {BORDER};border-radius:8px;padding:10px 12px;">
+            <div style="font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:{MUTED};font-family:system-ui,-apple-system,'Segoe UI',sans-serif;">{label}</div>
+            <div style="font-size:14px;font-weight:700;color:{INK};margin-top:3px;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{value}</div>
+          </div>
+        </td>"""
+
+
+def highlights_row(top_page, top_ref, top_location):
+    cards = (
+        highlight_card("Top page", top_page)
+        + highlight_card("Top referrer", top_ref)
+        + highlight_card("Top country", top_location)
+    )
+    return (
+        '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
+        f'style="margin-top:18px;table-layout:fixed;"><tr>{cards}</tr></table>'
+    )
+
+
 def build_email(
-    site_url, start, end, total, prev_total, daily, pages, refs, locations, browsers, systems
+    site_url, start, end, total, prev_total, daily,
+    pages, refs, locations, browsers, systems, sizes,
 ):
     date_range = f"{start.strftime('%-d %b')} – {(end - datetime.timedelta(days=1)).strftime('%-d %b %Y')}"
     badge_text, badge_color = delta_badge(total, prev_total)
     flagged_locations = [(f"{flag_emoji(code)} {name}", count) for name, code, count in locations]
+
+    top_page = pages[0][0] if pages else "&mdash;"
+    top_ref = refs[0][0] if refs else "&mdash;"
+    top_location = flagged_locations[0][0] if flagged_locations else "&mdash;"
 
     return f"""\
 <!doctype html>
@@ -212,13 +247,15 @@ def build_email(
                 visits this week &middot; <span style="color:{badge_color};font-weight:600;">{badge_text}</span> vs previous week
               </div>
               <div style="margin-top:16px;">{sparkline_html(daily)}</div>
+              {highlights_row(top_page, top_ref, top_location)}
             </td>
           </tr>
-          {section("Top pages", pages, base_url=f"https://{site_url}")}
-          {section("Top referrers", refs)}
-          {section("Top locations", flagged_locations)}
+          {section("Top pages", pages, base_url=f"https://{site_url}", color=NAVY, share_of=total)}
+          {section("Top referrers", refs, color=GOLD, share_of=total)}
+          {section("Top locations", flagged_locations, color=NAVY, share_of=total)}
           {chips_section("Browsers", browsers)}
           {chips_section("Devices", systems)}
+          {chips_section("Screen size", sizes)}
           <tr>
             <td style="padding:24px 32px 28px 32px;border-top:1px solid {BORDER};">
               <a href="https://{CODE}.goatcounter.com" style="color:{NAVY};font-size:13px;font-weight:600;text-decoration:none;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;">View full dashboard &rarr;</a>
@@ -257,6 +294,7 @@ def main():
     locations = top_locations(this_start, this_end)
     browsers = top_shares("browsers", this_start, this_end)
     systems = top_shares("systems", this_start, this_end)
+    sizes = top_shares("sizes", this_start, this_end)
 
     html = build_email(
         site_url=os.environ.get("SITE_URL", "your site"),
@@ -270,6 +308,7 @@ def main():
         locations=locations,
         browsers=browsers,
         systems=systems,
+        sizes=sizes,
     )
     send(html, subject=f"Weekly analytics: {total} visits")
 

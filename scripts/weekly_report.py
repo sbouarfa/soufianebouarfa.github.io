@@ -67,18 +67,18 @@ def total_and_daily(start, end):
     return data["total"], daily
 
 
-def top_list(page, start, end, limit=5):
+def top_list(page, start, end, limit=10):
     data = get(f"stats/{page}", start, end, limit=limit)
     key = "hits" if page == "hits" else "stats"
     return [(item.get("path") or item.get("name"), item["count"]) for item in data[key]]
 
 
-def top_locations(start, end, limit=5):
+def top_locations(start, end, limit=10):
     data = get("stats/locations", start, end, limit=limit)
     return [(item["name"], item["id"], item["count"]) for item in data["stats"]]
 
 
-def top_shares(page, start, end, top_n=3):
+def top_shares(page, start, end, top_n=5):
     """Top N items plus each one's share of the (larger) sample fetched."""
     data = get(f"stats/{page}", start, end, limit=100)
     stats = data["stats"]
@@ -216,7 +216,7 @@ def highlights_row(top_page, top_ref, top_location):
 
 def build_email(
     site_url, start, end, total, prev_total, daily,
-    pages, refs, locations, browsers, systems, sizes,
+    pages, refs, locations, browsers, systems, sizes, languages,
 ):
     date_range = f"{start.strftime('%-d %b')} – {(end - datetime.timedelta(days=1)).strftime('%-d %b %Y')}"
     badge_text, badge_color = delta_badge(total, prev_total)
@@ -256,6 +256,7 @@ def build_email(
           {chips_section("Browsers", browsers)}
           {chips_section("Devices", systems)}
           {chips_section("Screen size", sizes)}
+          {chips_section("Languages", languages)}
           <tr>
             <td style="padding:24px 32px 28px 32px;border-top:1px solid {BORDER};">
               <a href="https://{CODE}.goatcounter.com" style="color:{NAVY};font-size:13px;font-weight:600;text-decoration:none;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;">View full dashboard &rarr;</a>
@@ -295,6 +296,7 @@ def main():
     browsers = top_shares("browsers", this_start, this_end)
     systems = top_shares("systems", this_start, this_end)
     sizes = top_shares("sizes", this_start, this_end)
+    languages = top_shares("languages", this_start, this_end)
 
     html = build_email(
         site_url=os.environ.get("SITE_URL", "your site"),
@@ -309,6 +311,7 @@ def main():
         browsers=browsers,
         systems=systems,
         sizes=sizes,
+        languages=languages,
     )
     send(html, subject=f"Weekly analytics: {total} visits")
 

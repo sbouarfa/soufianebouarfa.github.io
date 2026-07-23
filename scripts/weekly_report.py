@@ -62,6 +62,8 @@ def get(path, start, end, **params):
         params={"start": iso_date(start), "end": iso_date(end), **params},
         timeout=30,
     )
+    if not r.ok:
+        print(f"GoatCounter API error {r.status_code} for {r.url}:\n{r.text}")
     r.raise_for_status()
     return r.json()
 

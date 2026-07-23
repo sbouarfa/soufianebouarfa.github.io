@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch the past week's GoatCounter stats and email a styled digest.
+"""Fetch the previous day's GoatCounter stats and email a styled digest.
 
 Required environment variables:
   GOATCOUNTER_CODE      site code, e.g. "soufianebouarfa" (subdomain of goatcounter.com)
@@ -44,15 +44,16 @@ def iso(dt):
     return dt.strftime("%Y-%m-%dT00:00:00Z")
 
 
-def week_ranges():
+def day_ranges():
     today = datetime.datetime.now(datetime.timezone.utc).date()
-    # most recent full Mon-Sun week that ended before today
-    last_monday = today - datetime.timedelta(days=today.weekday() + 7)
-    this_start = last_monday
-    this_end = last_monday + datetime.timedelta(days=7)
-    prev_start = last_monday - datetime.timedelta(days=7)
-    prev_end = last_monday
-    return this_start, this_end, prev_start, prev_end
+    # most recent full day that ended before today
+    this_start = today - datetime.timedelta(days=1)
+    this_end = today
+    prev_start = this_start - datetime.timedelta(days=1)
+    prev_end = this_start
+    spark_start = this_end - datetime.timedelta(days=7)
+    spark_end = this_end
+    return this_start, this_end, prev_start, prev_end, spark_start, spark_end
 
 
 def get(path, start, end, **params):
@@ -236,7 +237,7 @@ def build_email(
     site_url, start, end, total, prev_total, daily,
     pages, refs, locations, browsers, systems, sizes, languages,
 ):
-    date_range = f"{start.strftime('%-d %b')} – {(end - datetime.timedelta(days=1)).strftime('%-d %b %Y')}"
+    date_range = start.strftime('%-d %b %Y')
     badge_text, badge_color = delta_badge(total, prev_total)
     flagged_locations = [(f"{flag_emoji(code)} {name}", count) for name, code, count in locations]
 
@@ -255,14 +256,14 @@ def build_email(
           <tr>
             <td style="background:{NAVY};padding:20px 32px;">
               <div style="color:#ffffff;font-size:15px;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;font-weight:600;">{site_url}</div>
-              <div style="color:{GOLD};font-size:12px;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;margin-top:2px;">Weekly analytics &middot; {date_range}</div>
+              <div style="color:{GOLD};font-size:12px;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;margin-top:2px;">Daily analytics &middot; {date_range}</div>
             </td>
           </tr>
           <tr>
             <td style="padding:28px 32px 8px 32px;">
               <div style="font-size:40px;line-height:1;font-weight:700;color:{INK};font-family:system-ui,-apple-system,'Segoe UI',sans-serif;">{total}</div>
               <div style="font-size:13px;color:{MUTED};margin-top:4px;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;">
-                visits this week &middot; <span style="color:{badge_color};font-weight:600;">{badge_text}</span> vs previous week
+                visits yesterday &middot; <span style="color:{badge_color};font-weight:600;">{badge_text}</span> vs previous day
               </div>
               <div style="margin-top:16px;">{sparkline_html(daily)}</div>
               {highlights_row(top_page, top_ref, top_location)}
@@ -304,10 +305,11 @@ def send(html, subject):
 
 
 def main():
-    this_start, this_end, prev_start, prev_end = week_ranges()
+    this_start, this_end, prev_start, prev_end, spark_start, spark_end = day_ranges()
 
-    total, daily = total_and_daily(this_start, this_end)
+    total, _ = total_and_daily(this_start, this_end)
     prev_total, _ = total_and_daily(prev_start, prev_end)
+    _, daily = total_and_daily(spark_start, spark_end)
     pages = top_list("hits", this_start, this_end)
     refs = top_list("toprefs", this_start, this_end)
     locations = top_locations(this_start, this_end)
@@ -331,7 +333,7 @@ def main():
         sizes=sizes,
         languages=languages,
     )
-    send(html, subject=f"Weekly analytics: {total} visits")
+    send(html, subject=f"Daily analytics: {total} visits")
 
 
 if __name__ == "__main__":

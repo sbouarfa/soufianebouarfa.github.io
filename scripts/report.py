@@ -321,6 +321,8 @@ def send(html, subject):
         },
         timeout=30,
     )
+    if not r.ok:
+        print(f"Resend API error {r.status_code}:\n{r.text}")
     r.raise_for_status()
 
 

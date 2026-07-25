@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch the previous day's GoatCounter stats and email a styled digest.
+"""Fetch GoatCounter stats for a day or week and email a styled digest.
 
 Required environment variables:
   GOATCOUNTER_CODE      site code, e.g. "soufianebouarfa" (subdomain of goatcounter.com)
@@ -8,6 +8,7 @@ Required environment variables:
   EMAIL_TO              recipient address (must match the Resend account's
                          verified email unless a custom domain is verified)
   EMAIL_FROM            optional, defaults to onboarding@resend.dev
+  REPORT_PERIOD         optional, "daily" (default) or "weekly"
 """
 import datetime
 import os
@@ -18,6 +19,7 @@ CODE = os.environ["GOATCOUNTER_CODE"]
 TOKEN = os.environ["GOATCOUNTER_API_TOKEN"]
 API = f"https://{CODE}.goatcounter.com/api/v0"
 HEADERS = {"Authorization": f"Bearer {TOKEN}"}
+PERIOD = os.environ.get("REPORT_PERIOD", "daily")
 
 NAVY = "#12233f"
 GOLD = "#b08d57"
@@ -27,6 +29,11 @@ MUTED = "#5c6472"
 BORDER = "#e6ddc8"
 GOOD = "#0ca30c"
 BAD = "#d03b3b"
+
+PERIOD_LABELS = {
+    "daily": {"title": "Daily analytics", "visits": "visits yesterday", "vs": "vs previous day"},
+    "weekly": {"title": "Weekly analytics", "visits": "visits this week", "vs": "vs previous week"},
+}
 
 DIRECT_LABEL = "Direct / unknown"
 SIZE_LABELS = {
@@ -44,9 +51,17 @@ def iso(dt):
     return dt.strftime("%Y-%m-%dT00:00:00Z")
 
 
-def day_ranges():
+def period_ranges(period):
     today = datetime.datetime.now(datetime.timezone.utc).date()
-    # most recent full day that ended before today
+    if period == "weekly":
+        # most recent full Mon-Sun week that ended before today
+        last_monday = today - datetime.timedelta(days=today.weekday() + 7)
+        this_start = last_monday
+        this_end = last_monday + datetime.timedelta(days=7)
+        prev_start = last_monday - datetime.timedelta(days=7)
+        prev_end = last_monday
+        return this_start, this_end, prev_start, prev_end, this_start, this_end
+    # daily: most recent full day that ended before today
     this_start = today - datetime.timedelta(days=1)
     this_end = today
     prev_start = this_start - datetime.timedelta(days=1)
@@ -236,8 +251,13 @@ def highlights_row(top_page, top_ref, top_location):
 def build_email(
     site_url, start, end, total, prev_total, daily,
     pages, refs, locations, browsers, systems, sizes, languages,
+    period=PERIOD,
 ):
-    date_range = start.strftime('%-d %b %Y')
+    labels = PERIOD_LABELS[period]
+    if period == "weekly":
+        date_range = f"{start.strftime('%-d %b')} – {(end - datetime.timedelta(days=1)).strftime('%-d %b %Y')}"
+    else:
+        date_range = start.strftime('%-d %b %Y')
     badge_text, badge_color = delta_badge(total, prev_total)
     flagged_locations = [(f"{flag_emoji(code)} {name}", count) for name, code, count in locations]
 
@@ -256,14 +276,14 @@ def build_email(
           <tr>
             <td style="background:{NAVY};padding:20px 32px;">
               <div style="color:#ffffff;font-size:15px;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;font-weight:600;">{site_url}</div>
-              <div style="color:{GOLD};font-size:12px;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;margin-top:2px;">Daily analytics &middot; {date_range}</div>
+              <div style="color:{GOLD};font-size:12px;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;margin-top:2px;">{labels["title"]} &middot; {date_range}</div>
             </td>
           </tr>
           <tr>
             <td style="padding:28px 32px 8px 32px;">
               <div style="font-size:40px;line-height:1;font-weight:700;color:{INK};font-family:system-ui,-apple-system,'Segoe UI',sans-serif;">{total}</div>
               <div style="font-size:13px;color:{MUTED};margin-top:4px;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;">
-                visits yesterday &middot; <span style="color:{badge_color};font-weight:600;">{badge_text}</span> vs previous day
+                {labels["visits"]} &middot; <span style="color:{badge_color};font-weight:600;">{badge_text}</span> {labels["vs"]}
               </div>
               <div style="margin-top:16px;">{sparkline_html(daily)}</div>
               {highlights_row(top_page, top_ref, top_location)}
@@ -305,7 +325,7 @@ def send(html, subject):
 
 
 def main():
-    this_start, this_end, prev_start, prev_end, spark_start, spark_end = day_ranges()
+    this_start, this_end, prev_start, prev_end, spark_start, spark_end = period_ranges(PERIOD)
 
     total, _ = total_and_daily(this_start, this_end)
     prev_total, _ = total_and_daily(prev_start, prev_end)
@@ -332,8 +352,9 @@ def main():
         systems=systems,
         sizes=sizes,
         languages=languages,
+        period=PERIOD,
     )
-    send(html, subject=f"Daily analytics: {total} visits")
+    send(html, subject=f"{PERIOD_LABELS[PERIOD]['title']}: {total} visits")
 
 
 if __name__ == "__main__":

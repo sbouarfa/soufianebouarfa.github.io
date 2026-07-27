@@ -75,17 +75,13 @@ def get(path, start, end, **params):
     r = requests.get(
         f"{API}/{path}",
         headers=HEADERS,
-        params={"start": iso_date(start), "end": iso_date(end), **params},
+        params={"start": iso(start), "end": iso(end), **params},
         timeout=30,
     )
     if not r.ok:
         print(f"GoatCounter API error {r.status_code} for {r.url}:\n{r.text}")
     r.raise_for_status()
     return r.json()
-
-
-def iso_date(d):
-    return d.strftime("%Y-%m-%d")
 
 
 def total_and_daily(start, end):

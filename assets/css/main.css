@@ -266,6 +266,12 @@ main h2::before {
 .card i { color: var(--gold-deep); }
 .about-icon { color: var(--gold-deep); margin-right: 8px; }
 
+.cta-card { margin-top: 28px; }
+.cta-card-action { margin-top: 10px; }
+
+.about-actions { text-align: center; margin-top: 2rem; }
+.about-actions .btn-outline { margin-left: 1rem; }
+
 /* credentials */
 .credential-card {
   display: flex;

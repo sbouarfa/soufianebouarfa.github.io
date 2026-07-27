@@ -119,7 +119,7 @@ Ultimately, I see architecture as a leadership instrument, one that brings clari
 
 Outside of work, I enjoy spending time with my family and reflecting on how technology, systems, and society evolve over time.
 
-<div style="text-align: center; margin-top: 2rem;">
+<div class="about-actions">
 <a href="/contact/" class="btn btn-primary">Get in Touch</a>
-<a href="https://www.linkedin.com/in/soufianebouarfa/" class="btn btn-outline" style="margin-left: 1rem;">LinkedIn</a>
+<a href="https://www.linkedin.com/in/soufianebouarfa/" class="btn btn-outline">LinkedIn</a>
 </div>

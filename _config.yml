@@ -5,6 +5,9 @@ timezone: "Europe/Amsterdam"
 
 markdown: kramdown
 
+include:
+  - ".well-known"
+
 collections:
   work:
     output: true

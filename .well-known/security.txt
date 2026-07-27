@@ -1,0 +1,4 @@
+Contact: mailto:soufiane@novelinsights.com
+Expires: 2027-07-01T00:00:00.000Z
+Canonical: https://www.soufianebouarfa.com/.well-known/security.txt
+Preferred-Languages: en

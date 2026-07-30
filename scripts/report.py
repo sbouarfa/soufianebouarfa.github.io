@@ -12,6 +12,7 @@ Required environment variables:
 """
 import datetime
 import os
+import time
 
 import requests
 
@@ -71,17 +72,20 @@ def period_ranges(period):
     return this_start, this_end, prev_start, prev_end, spark_start, spark_end
 
 
-def get(path, start, end, **params):
-    r = requests.get(
-        f"{API}/{path}",
-        headers=HEADERS,
-        params={"start": iso(start), "end": iso(end), **params},
-        timeout=30,
-    )
-    if not r.ok:
-        print(f"GoatCounter API error {r.status_code} for {r.url}:\n{r.text}")
+def get(path, start, end, retries=3, retry_delay=10, **params):
+    for attempt in range(1, retries + 1):
+        r = requests.get(
+            f"{API}/{path}",
+            headers=HEADERS,
+            params={"start": iso(start), "end": iso(end), **params},
+            timeout=30,
+        )
+        if r.ok:
+            return r.json()
+        print(f"GoatCounter API error {r.status_code} for {r.url} (attempt {attempt}/{retries}):\n{r.text}")
+        if attempt < retries:
+            time.sleep(retry_delay)
     r.raise_for_status()
-    return r.json()
 
 
 def total_and_daily(start, end):

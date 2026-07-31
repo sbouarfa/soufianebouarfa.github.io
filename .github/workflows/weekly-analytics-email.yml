@@ -2,8 +2,8 @@ name: Weekly analytics email
 
 on:
   schedule:
-    # Every Friday at 11:00 CEST / 09:00 UTC (shifts to 10:00 UTC during CET, winter)
-    - cron: "0 9 * * 5"
+    # Every Monday at 11:00 CEST / 09:00 UTC (shifts to 10:00 UTC during CET, winter)
+    - cron: "0 9 * * 1"
   workflow_dispatch: {}
 
 jobs:

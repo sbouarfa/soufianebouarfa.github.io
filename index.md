@@ -100,16 +100,16 @@ For example, I have worked on large-scale information governance and platform tr
 <a class="btn btn-outline btn-sm" href="https://www.credly.com/badges/ac3ba513-5d56-4980-8ec6-3c48a70a9159" target="_blank" rel="noopener">Verify credential</a>
 </div>
 <div class="card credential-card">
-<img src="/assets/images/credentials/psm1.png" alt="Scrum.org Professional Scrum Master I (PSM I) badge" />
-<h4>Professional Scrum Master&trade; I (PSM&nbsp;I)</h4>
-<p class="credential-issuer">Scrum.org</p>
-<a class="btn btn-outline btn-sm" href="https://www.credly.com/badges/0edba9e3-c840-4b4b-8a9d-dd28427cd924" target="_blank" rel="noopener">Verify credential</a>
-</div>
-<div class="card credential-card">
 <img src="/assets/images/credentials/archimate3-foundation.png" alt="The Open Group Certified: ArchiMate 3 Foundation badge" />
 <h4>ArchiMate&reg; 3 Foundation</h4>
 <p class="credential-issuer">The Open Group</p>
 <a class="btn btn-outline btn-sm" href="https://www.credly.com/badges/7216aba1-b340-491f-b479-910386fc565f" target="_blank" rel="noopener">Verify credential</a>
+</div>
+<div class="card credential-card">
+<img src="/assets/images/credentials/psm1.png" alt="Scrum.org Professional Scrum Master I (PSM I) badge" />
+<h4>Professional Scrum Master&trade; I (PSM&nbsp;I)</h4>
+<p class="credential-issuer">Scrum.org</p>
+<a class="btn btn-outline btn-sm" href="https://www.credly.com/badges/0edba9e3-c840-4b4b-8a9d-dd28427cd924" target="_blank" rel="noopener">Verify credential</a>
 </div>
 </div>
 

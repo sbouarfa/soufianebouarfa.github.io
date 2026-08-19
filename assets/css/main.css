@@ -261,7 +261,7 @@ main h2::before {
   border-color: var(--gold);
 }
 
-.card h4 { margin: 0 0 8px; font-size: 1.05rem; }
+.card h3, .card h4 { margin: 0 0 8px; font-size: 1.05rem; }
 .card p { color: var(--muted); margin: 0; }
 .card i { color: var(--gold-deep); }
 .about-icon { color: var(--gold-deep); margin-right: 8px; }
@@ -288,7 +288,7 @@ main h2::before {
   margin-bottom: 16px;
 }
 
-.credential-card h4 { margin: 0 0 4px; font-size: 1rem; }
+.credential-card h3 { margin: 0 0 4px; font-size: 1rem; }
 
 .credential-card .credential-issuer {
   color: var(--muted);
@@ -368,6 +368,22 @@ blockquote {
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+/* profile content */
+main ul, main ol { padding-left: 1.3rem; margin: 0 0 1.2rem; }
+main li { margin-bottom: 6px; }
+
+main dl { margin: 0 0 1.2rem; }
+main dt { font-family: var(--font-serif); color: var(--navy); font-weight: 600; margin-top: 1.2rem; }
+main dd { margin: 4px 0 0; color: var(--ink); }
+
+main h3 { margin: 2rem 0 0.6rem; }
+
+.note {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin: -8px 0 1.2rem;
 }
 
 /* accessibility */

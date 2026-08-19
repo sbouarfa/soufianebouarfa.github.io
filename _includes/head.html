@@ -8,7 +8,36 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}" />
 
-{% seo %}
+{% if page.url == "/" %}
+  <title>Soufiane Bouarfa | Enterprise Architect</title>
+  {% capture seo_block %}{% seo title=false %}{% endcapture %}
+  {{ seo_block | replace: 'property="og:type" content="website"', 'property="og:type" content="profile"' }}
+{% else %}
+  {% seo %}
+{% endif %}
 {% feed_meta %}
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Soufiane Bouarfa",
+  "jobTitle": "Enterprise Architect",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Delft University of Technology"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Novel Insights",
+    "url": "https://www.novelinsights.com/"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/soufianebouarfa/",
+    "https://scholar.google.com/citations?user=TK9PBDMAAAAJ"
+  ]
+}
+</script>
+{% endif %}
 <script data-goatcounter="https://soufianebouarfa.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>

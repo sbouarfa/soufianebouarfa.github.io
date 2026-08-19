@@ -1,131 +1,163 @@
 ---
 layout: page
-summary: "I am Soufiane Bouarfa, an Enterprise and Solution Architect helping regulated organizations deliver through governance."
+redirect_from:
+  - /work/
 ---
 
 <div class="hero-editorial">
   <div class="hero-text">
-    <span class="hero-kicker">Enterprise &amp; Solution Architect</span>
-    <h1>Governance-led architecture for organizations that can't afford to get it wrong.</h1>
-    <p class="lede">I'm Dr. Soufiane Bouarfa — an Enterprise Architect and advisor working at the intersection of strategy, architecture, and execution, helping organizations design and govern complex digital systems where reliability, compliance, and long-term impact matter.</p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="/contact/">Get in Touch</a>
-      <a class="btn btn-outline" href="/insights/">Explore Insights</a>
-    </div>
-    <div class="hero-badges">
-      <span>PhD, TU Delft</span>
-      <span>Rijkswaterstaat</span>
-      <span>Airbus</span>
-      <span>Shell</span>
-    </div>
+    <span class="hero-kicker">Enterprise Architect</span>
+    <h1>Soufiane Bouarfa</h1>
+    <p class="lede">I am an enterprise architect working on complex decisions in public infrastructure and regulated organisations. Before that I spent a decade in research and teaching, studying how large sociotechnical systems behave under uncertainty.</p>
   </div>
   <div class="hero-photo">
-    <img src="/assets/images/about/soufiane.jpg" alt="Dr. Soufiane Bouarfa" />
+    <img src="/assets/images/about/soufiane.jpg" alt="Soufiane Bouarfa" />
   </div>
 </div>
 
-> "Enterprise Architecture is the discipline that governs the modern socio-technical enterprise by aligning institutional intent, digital design, and operational reality." — From my recent article on Enterprise Architecture
+<p>I run <a href="https://www.novelinsights.com/">Novel Insights</a>, an independent architecture practice. This page is the personal record — where I have worked, what I have published, and what I am certified in.</p>
 
-### <i class="fas fa-brain about-icon"></i> Systems thinking applied to real-world complexity
+## Selected experience
+{: #experience}
 
-What differentiates my approach is a foundation in complex socio-technical systems. During my PhD at TU Delft, I studied how large-scale systems behave under uncertainty, focusing on safety, resilience, and coordination in air transportation.
+**Novel Insights** — Founder and Principal Architect, 2022–present
+: Independent architecture practice for public-sector, infrastructure and regulated organisations. Current engagement: Solution Architect, Information Governance, at Rijkswaterstaat since 2023.
 
-Today, I apply that same systems thinking to enterprise environments, where technology, data, and organisations interact in equally complex ways. Enterprises are not merely collections of processes or systems. They are networks of people operating within institutional structures, using digital technologies to deliver value across physical, digital, and institutional domains.
+**Accenture** — Manager, Data & AI, 2021–2023
+: Transformation programmes in aviation and energy, as contractor for Airbus and Shell Renewables.
 
-### <i class="fas fa-cogs about-icon"></i> From strategy to execution
+**Abu Dhabi Polytechnic, Institute of Applied Technology** — Assistant Professor, Aircraft Maintenance Technology, 2019–2021
+: Teaching, curriculum development and department coordination in aircraft maintenance engineering.
 
-I specialize in translating strategy into coherent architectures and governance structures that enable real delivery across platforms, data, and operating models.
+**Delft University of Technology** — 2011–2018
+: Postdoctoral Researcher, 2016–2018. PhD Candidate, 2011–2015: agent-based modelling and simulation of complex sociotechnical systems, focused on safety and resilience in air transportation.
 
-My experience spans government, aviation, and industry, supporting organizations such as Rijkswaterstaat, Airbus, and Shell on high-impact transformation initiatives.
+### Earlier roles
 
-My work typically involves shaping critical platforms, information governance structures, and architectural direction in programs where decisions have long-term operational and organizational impact.
+- Deloitte — Junior Manager, Responsible Data & Analytics, 2018–2019
+- Accenture — Cyber Security Consultant, 2011
+- EUROCONTROL — Complexity Science Researcher, 2009–2010
+- Accenture — Cyber Security Analyst, 2007–2009
 
-For example, I have worked on large-scale information governance and platform transformation initiatives within government environments, where architecture needed to balance compliance, legacy systems, and operational continuity.
+## Education
+{: #education}
 
-## <i class="fas fa-tools about-icon"></i> What I Do
+**Delft University of Technology**
 
-<div class="grid">
-<div class="card">
-<h4><i class="fas fa-drafting-compass"></i> Design Architectures</h4>
-<p>Future-proof architectures aligned with business strategy</p>
-</div>
-<div class="card">
-<h4><i class="fas fa-balance-scale"></i> Establish Governance</h4>
-<p>Governance that enables delivery, not just control</p>
-</div>
-<div class="card">
-<h4><i class="fas fa-route"></i> Navigate Transformations</h4>
-<p>Complex transformations across systems, data, and processes</p>
-</div>
-<div class="card">
-<h4><i class="fas fa-link"></i> Bridge Gaps</h4>
-<p>Connect executive intent with technical reality</p>
-</div>
-</div>
+- PhD in Aerospace Engineering, 2011–2015. Dissertation: *Agent-Based Modelling and Simulation of Safety and Resilience in Air Transportation*.
+- MSc in Aerospace Engineering, 2005–2007. Specialisation in dynamics and control, human–machine interaction and avionics.
+- BSc in Aerospace Engineering, 2002–2005.
 
-## <i class="fas fa-bullseye about-icon"></i> Focus Areas
+## Research and publications
+{: #publications}
 
-<div class="grid">
-<div class="card">
-<h4>Enterprise & Solution Architecture</h4>
-<p>End-to-end architectural design and governance</p>
-</div>
-<div class="card">
-<h4>Information & Data Governance</h4>
-<p>Managing data as a strategic asset</p>
-</div>
-<div class="card">
-<h4>Digital Platforms & Operating Models</h4>
-<p>Modernizing platforms and operational frameworks</p>
-</div>
-<div class="card">
-<h4>Complex Regulated Environments</h4>
-<p>Government, aviation, and infrastructure sectors</p>
-</div>
-</div>
+My research examined how complex sociotechnical systems behave under uncertainty — how people and technology coordinate, how failures propagate, and how resilience is produced rather than assumed. The central concern was emergent behaviour: outcomes that arise from interactions between parts of a system rather than from any single component, and which can be beneficial as much as harmful. My doctoral work applied agent-based modelling and simulation to two cases — emergent safety risk in runway crossing operations, and the role of coordination in airline operations control resilience. Later work applied computer vision to aircraft inspection.
 
-## <i class="fas fa-certificate about-icon"></i> Credentials & Certifications
+Research funded by grants totalling approximately €280,000, including a EUROCONTROL doctoral grant and research grants from EUROCONTROL and the Royal Netherlands Aerospace Centre.
+
+Selected work below; the full record is on [Google Scholar](https://scholar.google.com/citations?user=TK9PBDMAAAAJ) and [ResearchGate](https://www.researchgate.net/profile/Soufiane-Bouarfa).
+
+<p class="note">Citation counts from Google Scholar, August 2026.</p>
+
+### Complex systems, resilience and emergent behaviour
+
+- Agent-Based Modeling and Simulation of Emergent Behavior in Air Transportation — *Complex Adaptive Systems Modeling*, 2013 — 107 citations
+- Agent-Based Modelling and Simulation of Safety and Resilience in Air Transportation — Doctoral thesis, Delft University of Technology, 2015
+- Resilience — chapter in *Complexity Science in Air Traffic Management*, Routledge, 2016 — 14 citations
+- Emergent Behaviour — chapter in *Complexity Science in Air Traffic Management*, Routledge, 2016
+- Airport Performance Modeling using an Agent-Based Approach — 3rd International Air Transport and Operations Symposium, 2012 — 11 citations
+
+### Coordination and decision-making under disruption
+
+- Agent-Based Modeling and Simulation of Coordination by Airline Operations Control — *IEEE Transactions on Emerging Topics in Computing*, 2016 — 46 citations
+- Evaluation of a Multi-Agent System Approach to Airline Disruption Management — *Journal of Air Transport Management*, 2018 — 34 citations
+- Formal Modelling and Verification of a Multi-Agent Negotiation Approach for Airline Operations Control — *Journal of Reliable Intelligent Environments*, 2021 — 6 citations
+- Evaluating Airline and Railway Command and Control Systems — AIAA SciTech Forum, 2021
+- A Multi-Agent Negotiation Approach for Airline Operation Control — 15th International Conference on Intelligent Environments, 2019
+- A Study into Modeling Coordination in Disruption Management by Airline Operations Control — 14th AIAA Aviation Technology, Integration and Operations Conference, 2014
+- Agent-Based Modelling and Simulation of Airline Operations Control Decision-Making under Uncertainty — AIAA SciTech Forum, 2021
+
+### Applied artificial intelligence, computer vision and inspection
+
+- Using Convolutional Neural Networks to Automate Aircraft Maintenance Visual Inspection — *Aerospace*, 2020 — 112 citations
+- Towards Automated Aircraft Maintenance Inspection: detecting aircraft dents using Mask R-CNN — AIAA SciTech Forum, 2020 — 68 citations
+- Automated Drone-Based Aircraft Inspection — *Intelligent Environments*, 2020 — 9 citations
+- A Quantitative Comparison of Automated Cleaning Techniques for Web-Scraped Image Data of Smart Cities — 4th International Conference on Image Processing and Machine Vision, 2022
+
+### Safety management and organisational learning
+
+- Safety Management System and Hazards in the Aircraft Maintenance Industry: a systematic literature review — *Aviation*, 2023 — 17 citations
+- Learning from Past in the Aircraft Maintenance Industry: an empirical evaluation in the safety management framework — *Heliyon*, 2023 — 12 citations
+- Learning from Past in the Commercial Air Transport Industry: a bibliometric analysis and systematic literature review — *International Journal of Aviation, Aeronautics, and Aerospace*, 2023 — 4 citations
+
+## Teaching and supervision
+{: #teaching}
+
+**Abu Dhabi Polytechnic, Institute of Applied Technology** — 2019–2021
+: Taught EASA Part 66 aircraft maintenance licence courses (B1 and B2) across three academic years, holding a teaching certificate issued in 2019. Department research coordinator and student advisor. Supervised undergraduate and graduate research in data and artificial intelligence.
+
+**Delft University of Technology** — 2011–2018
+: Lectured on two courses in the Aerospace Engineering faculty: *Agent-Based Safety Risk Analysis* (AE4-888, MSc) and *Experimental Research and Data Analysis* (AE2-222, BSc), each across three academic years. Supervised MSc graduation projects, and the Design Synthesis Exercise practical project from 2011 to 2017.
+
+**Accenture** — 2021–2023
+: Supervised graduation projects in artificial intelligence and natural language processing.
+
+**External examiner** — Institut Agronomique et Vétérinaire Hassan II, Morocco, 2021
+: Examiner on an engineering graduation jury for a project on automating aircraft visual inspection using deep learning.
+
+## <i class="fas fa-certificate about-icon"></i> Credentials
+{: #credentials}
 
 <div class="grid">
 <div class="card credential-card">
 <img src="/assets/images/credentials/togaf-foundation.png" alt="The Open Group Certified: TOGAF Enterprise Architecture Foundation badge" />
-<h4>TOGAF&reg; Enterprise Architecture Foundation</h4>
+<h3>TOGAF&reg; Enterprise Architecture Foundation</h3>
 <p class="credential-issuer">The Open Group</p>
 <a class="btn btn-outline btn-sm" href="https://www.credly.com/badges/84cd428b-54d9-4b2f-b356-57974cc03fa1" target="_blank" rel="noopener">Verify credential</a>
 </div>
 <div class="card credential-card">
 <img src="/assets/images/credentials/togaf-practitioner.png" alt="The Open Group Certified: TOGAF Enterprise Architecture Practitioner badge" />
-<h4>TOGAF&reg; Enterprise Architecture Practitioner</h4>
+<h3>TOGAF&reg; Enterprise Architecture Practitioner</h3>
 <p class="credential-issuer">The Open Group</p>
 <a class="btn btn-outline btn-sm" href="https://www.credly.com/badges/ac3ba513-5d56-4980-8ec6-3c48a70a9159" target="_blank" rel="noopener">Verify credential</a>
 </div>
 <div class="card credential-card">
 <img src="/assets/images/credentials/archimate3-foundation.png" alt="The Open Group Certified: ArchiMate 3 Foundation badge" />
-<h4>ArchiMate&reg; 3 Foundation</h4>
+<h3>ArchiMate&reg; 3 Foundation</h3>
 <p class="credential-issuer">The Open Group</p>
 <a class="btn btn-outline btn-sm" href="https://www.credly.com/badges/7216aba1-b340-491f-b479-910386fc565f" target="_blank" rel="noopener">Verify credential</a>
 </div>
 <div class="card credential-card">
 <img src="/assets/images/credentials/psm1.png" alt="Scrum.org Professional Scrum Master I (PSM I) badge" />
-<h4>Professional Scrum Master&trade; I (PSM&nbsp;I)</h4>
+<h3>Professional Scrum Master&trade; I (PSM&nbsp;I)</h3>
 <p class="credential-issuer">Scrum.org</p>
 <a class="btn btn-outline btn-sm" href="https://www.credly.com/badges/0edba9e3-c840-4b4b-8a9d-dd28427cd924" target="_blank" rel="noopener">Verify credential</a>
 </div>
 </div>
 
-## <i class="fas fa-eye about-icon"></i> Perspective
+## Honours and professional roles
+{: #honours}
 
-I see architecture not as documentation, but as a decision-making capability.
+- Member, Information & Command & Control Technical Committee, American Institute of Aeronautics and Astronautics, 2020–2021
+- Reviewer for international journals including the *Journal of Air Transport Management*, *Aerospace*, *IEEE Transactions on Engineering Management*, *Sustainability* and *Complex Adaptive Systems Modeling*
+- Session chair, 2nd International Conference on Interdisciplinary Science for Innovative Air Traffic Management, 2013
+- Winner, Global Investment in Aviation Summit competition, Dubai, 2020, for work on automating aircraft visual inspection
+- Abu Dhabi Young Investigator Award, 2021, for a proposal on automating aircraft visual inspection
+- Doctoral grant awarded through a EUROCONTROL and SESAR Joint Undertaking funded call on air traffic management, 2011
+- ISTAT Foundation scholarship for outstanding aviation students, 2006
 
-In digital organizations, architecture defines how decisions are made, how systems evolve, and how value is delivered at scale. My goal is to make that structure explicit, coherent, and actionable.
+## Languages
+{: #languages}
 
-Ultimately, I see architecture as a leadership instrument, one that brings clarity, alignment, and direction in increasingly complex organizations. As I explore in my writing, Enterprise Architecture governs the modern socio-technical enterprise by making trade-offs visible and ensuring that institutional intent translates into operational reality through deliberate design.
+Arabic (native), English and French (full professional), Dutch (professional working).
 
 ## <i class="fas fa-user about-icon"></i> Beyond work
+{: #beyond-work}
 
-Outside of work, I enjoy spending time with my family and reflecting on how technology, systems, and society evolve over time.
+Outside work I run half marathons and paddleboard.
 
-<div class="about-actions">
-<a href="/contact/" class="btn btn-primary">Get in Touch</a>
-<a href="https://www.linkedin.com/in/soufianebouarfa/" class="btn btn-outline">LinkedIn</a>
-</div>
+## Contact
+{: #contact}
+
+- **Email:** [soufiane@novelinsights.com](mailto:soufiane@novelinsights.com)
+- **LinkedIn:** [linkedin.com/in/soufianebouarfa](https://www.linkedin.com/in/soufianebouarfa/)

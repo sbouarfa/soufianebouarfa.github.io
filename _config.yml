@@ -1,17 +1,12 @@
 title: "Soufiane Bouarfa"
-description: "Enterprise & Solution Architect — governance-led architecture for regulated and asset-heavy organizations."
-url: "https://soufianebouarfa.github.io"
+description: "Enterprise architect. Research background in complex sociotechnical systems. Founder of Novel Insights."
+url: "https://www.soufianebouarfa.com"
 timezone: "Europe/Amsterdam"
 
 markdown: kramdown
 
 include:
   - ".well-known"
-
-collections:
-  work:
-    output: true
-    permalink: /work/:name/
 
 defaults:
   - scope:
@@ -23,13 +18,9 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "work"
-    values:
-      layout: "work"
 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-redirect-from

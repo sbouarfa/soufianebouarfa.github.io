@@ -26,7 +26,7 @@ redirect_from:
 **Accenture** — Manager, Data & AI, 2021–2023
 : Transformation programmes in aviation and energy, as contractor for Airbus and Shell Renewables.
 
-**Abu Dhabi Polytechnic, Institute of Applied Technology** — Assistant Professor, Aircraft Maintenance Technology, 2019–2021
+**Abu Dhabi Polytechnic** — Assistant Professor, Aircraft Maintenance Technology, 2019–2021
 : Teaching, curriculum development and department coordination in aircraft maintenance engineering.
 
 **Delft University of Technology** — 2011–2018
@@ -53,48 +53,46 @@ redirect_from:
 
 My research examined how complex sociotechnical systems behave under uncertainty — how people and technology coordinate, how failures propagate, and how resilience is produced rather than assumed. The central concern was emergent behaviour: outcomes that arise from interactions between parts of a system rather than from any single component, and which can be beneficial as much as harmful. My doctoral work applied agent-based modelling and simulation to two cases — emergent safety risk in runway crossing operations, and the role of coordination in airline operations control resilience. Later work applied computer vision to aircraft inspection.
 
-Research funded by grants totalling approximately €280,000, including a EUROCONTROL doctoral grant and research grants from EUROCONTROL and the Royal Netherlands Aerospace Centre.
+Research funded by a EUROCONTROL doctoral grant and further research grants from EUROCONTROL and Delft University of Technology.
 
 Selected work below; the full record is on [Google Scholar](https://scholar.google.com/citations?user=TK9PBDMAAAAJ) and [ResearchGate](https://www.researchgate.net/profile/Soufiane-Bouarfa).
 
-<p class="note">Citation counts from Google Scholar, August 2026.</p>
-
 ### Complex systems, resilience and emergent behaviour
 
-- Agent-Based Modeling and Simulation of Emergent Behavior in Air Transportation — *Complex Adaptive Systems Modeling*, 2013 — 107 citations
-- Agent-Based Modelling and Simulation of Safety and Resilience in Air Transportation — Doctoral thesis, Delft University of Technology, 2015
-- Resilience — chapter in *Complexity Science in Air Traffic Management*, Routledge, 2016 — 14 citations
-- Emergent Behaviour — chapter in *Complexity Science in Air Traffic Management*, Routledge, 2016
-- Airport Performance Modeling using an Agent-Based Approach — 3rd International Air Transport and Operations Symposium, 2012 — 11 citations
+- [Agent-Based Modeling and Simulation of Emergent Behavior in Air Transportation](https://doi.org/10.1186/2194-3206-1-15) — *Complex Adaptive Systems Modeling*, 2013
+- [Agent-Based Modelling and Simulation of Safety and Resilience in Air Transportation](https://doi.org/10.4233/uuid:b676db6c-ed86-4b42-9940-9b90b94651f1) — Doctoral thesis, Delft University of Technology, 2015
+- [Resilience](https://doi.org/10.4324/9781315573205-5) — chapter in *Complexity Science in Air Traffic Management*, Routledge, 2016
+- [Emergent Behaviour](https://doi.org/10.4324/9781315573205-6) — chapter in *Complexity Science in Air Traffic Management*, Routledge, 2016
+- [Airport Performance Modeling using an Agent-Based Approach](https://doi.org/10.3233/978-1-61499-119-9-427) — 3rd International Air Transport and Operations Symposium, 2012
 
 ### Coordination and decision-making under disruption
 
-- Agent-Based Modeling and Simulation of Coordination by Airline Operations Control — *IEEE Transactions on Emerging Topics in Computing*, 2016 — 46 citations
-- Evaluation of a Multi-Agent System Approach to Airline Disruption Management — *Journal of Air Transport Management*, 2018 — 34 citations
-- Formal Modelling and Verification of a Multi-Agent Negotiation Approach for Airline Operations Control — *Journal of Reliable Intelligent Environments*, 2021 — 6 citations
-- Evaluating Airline and Railway Command and Control Systems — AIAA SciTech Forum, 2021
-- A Multi-Agent Negotiation Approach for Airline Operation Control — 15th International Conference on Intelligent Environments, 2019
-- A Study into Modeling Coordination in Disruption Management by Airline Operations Control — 14th AIAA Aviation Technology, Integration and Operations Conference, 2014
-- Agent-Based Modelling and Simulation of Airline Operations Control Decision-Making under Uncertainty — AIAA SciTech Forum, 2021
+- [Agent-Based Modeling and Simulation of Coordination by Airline Operations Control](https://doi.org/10.1109/TETC.2015.2439633) — *IEEE Transactions on Emerging Topics in Computing*, 2016
+- [Evaluation of a Multi-Agent System Approach to Airline Disruption Management](https://doi.org/10.1016/j.jairtraman.2018.05.009) — *Journal of Air Transport Management*, 2018
+- [Formal Modelling and Verification of a Multi-Agent Negotiation Approach for Airline Operations Control](https://doi.org/10.1007/s40860-020-00123-0) — *Journal of Reliable Intelligent Environments*, 2021
+- [Evaluating Airline and Railway Command and Control Systems](https://doi.org/10.2514/6.2021-0655) — AIAA SciTech Forum, 2021
+- [A Multi-Agent Negotiation Approach for Airline Operation Control](https://doi.org/10.3233/AISE190068) — 15th International Conference on Intelligent Environments, 2019
+- [A Study into Modeling Coordination in Disruption Management by Airline Operations Control](https://doi.org/10.2514/6.2014-3146) — 14th AIAA Aviation Technology, Integration and Operations Conference, 2014
+- [Agent-Based Modelling and Simulation of Airline Operations Control Decision-Making under Uncertainty](https://doi.org/10.2514/6.2021-0654) — AIAA SciTech Forum, 2021
 
 ### Applied artificial intelligence, computer vision and inspection
 
-- Using Convolutional Neural Networks to Automate Aircraft Maintenance Visual Inspection — *Aerospace*, 2020 — 112 citations
-- Towards Automated Aircraft Maintenance Inspection: detecting aircraft dents using Mask R-CNN — AIAA SciTech Forum, 2020 — 68 citations
-- Automated Drone-Based Aircraft Inspection — *Intelligent Environments*, 2020 — 9 citations
-- A Quantitative Comparison of Automated Cleaning Techniques for Web-Scraped Image Data of Smart Cities — 4th International Conference on Image Processing and Machine Vision, 2022
+- [Using Convolutional Neural Networks to Automate Aircraft Maintenance Visual Inspection](https://doi.org/10.3390/aerospace7120171) — *Aerospace*, 2020
+- [Towards Automated Aircraft Maintenance Inspection: detecting aircraft dents using Mask R-CNN](https://doi.org/10.2514/6.2020-0389) — AIAA SciTech Forum, 2020
+- [Automated Drone-Based Aircraft Inspection](https://doi.org/10.3233/AISE200026) — *Intelligent Environments*, 2020
+- [A Quantitative Comparison of Automated Cleaning Techniques for Web-Scraped Image Data of Smart Cities](https://doi.org/10.1145/3529446.3529457) — 4th International Conference on Image Processing and Machine Vision, 2022
 
 ### Safety management and organisational learning
 
-- Safety Management System and Hazards in the Aircraft Maintenance Industry: a systematic literature review — *Aviation*, 2023 — 17 citations
-- Learning from Past in the Aircraft Maintenance Industry: an empirical evaluation in the safety management framework — *Heliyon*, 2023 — 12 citations
-- Learning from Past in the Commercial Air Transport Industry: a bibliometric analysis and systematic literature review — *International Journal of Aviation, Aeronautics, and Aerospace*, 2023 — 4 citations
+- [Safety Management System and Hazards in the Aircraft Maintenance Industry: a systematic literature review](https://doi.org/10.3846/aviation.2023.19851) — *Aviation*, 2023
+- [Learning from Past in the Aircraft Maintenance Industry: an empirical evaluation in the safety management framework](https://doi.org/10.1016/j.heliyon.2023.e21620) — *Heliyon*, 2023
+- [Learning from Past in the Commercial Air Transport Industry: a bibliometric analysis and systematic literature review](https://commons.erau.edu/ijaaa/vol10/iss3/11/) — *International Journal of Aviation, Aeronautics, and Aerospace*, 2023
 
 ## Teaching and supervision
 {: #teaching}
 
-**Abu Dhabi Polytechnic, Institute of Applied Technology** — 2019–2021
-: Taught EASA Part 66 aircraft maintenance licence courses (B1 and B2) across three academic years, holding a teaching certificate issued in 2019. Department research coordinator and student advisor. Supervised undergraduate and graduate research in data and artificial intelligence.
+**Abu Dhabi Polytechnic** — 2019–2021
+: Taught EASA Part 66 aircraft maintenance licence courses (B1 and B2) across three academic years, holding a teaching certificate issued in 2019. Department research coordinator and student advisor. Supervised undergraduate and graduate aviation students in data and artificial intelligence.
 
 **Delft University of Technology** — 2011–2018
 : Lectured on two courses in the Aerospace Engineering faculty: *Agent-Based Safety Risk Analysis* (AE4-888, MSc) and *Experimental Research and Data Analysis* (AE2-222, BSc), each across three academic years. Supervised MSc graduation projects, and the Design Synthesis Exercise practical project from 2011 to 2017.
@@ -102,8 +100,7 @@ Selected work below; the full record is on [Google Scholar](https://scholar.goog
 **Accenture** — 2021–2023
 : Supervised graduation projects in artificial intelligence and natural language processing.
 
-**External examiner** — Institut Agronomique et Vétérinaire Hassan II, Morocco, 2021
-: Examiner on an engineering graduation jury for a project on automating aircraft visual inspection using deep learning.
+**External examiner** — Delft University of Technology (multiple occasions during PhD and postdoctoral studies, 2011–2018) and Institut Agronomique et Vétérinaire Hassan II, Morocco (2021).
 
 ## <i class="fas fa-certificate about-icon"></i> Credentials
 {: #credentials}
@@ -138,7 +135,7 @@ Selected work below; the full record is on [Google Scholar](https://scholar.goog
 ## Honours and professional roles
 {: #honours}
 
-- Member, Information & Command & Control Technical Committee, American Institute of Aeronautics and Astronautics, 2020–2021
+- Member, Information & Command & Control Technical Committee, American Institute of Aeronautics and Astronautics, 2020–2023
 - Reviewer for international journals including the *Journal of Air Transport Management*, *Aerospace*, *IEEE Transactions on Engineering Management*, *Sustainability* and *Complex Adaptive Systems Modeling*
 - Session chair, 2nd International Conference on Interdisciplinary Science for Innovative Air Traffic Management, 2013
 - Winner, Global Investment in Aviation Summit competition, Dubai, 2020, for work on automating aircraft visual inspection
@@ -149,12 +146,7 @@ Selected work below; the full record is on [Google Scholar](https://scholar.goog
 ## Languages
 {: #languages}
 
-Arabic (native), English and French (full professional), Dutch (professional working).
-
-## <i class="fas fa-user about-icon"></i> Beyond work
-{: #beyond-work}
-
-Outside work I run half marathons and paddleboard.
+Arabic (native), English and Dutch (full professional), French (professional working).
 
 ## Contact
 {: #contact}

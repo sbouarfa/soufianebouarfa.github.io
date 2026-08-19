@@ -3,6 +3,7 @@ layout: page
 title: "Selected Architecture Engagements"
 summary: "Representative programs and architecture work."
 permalink: /work/
+published: false
 ---
 
 <div class="grid">

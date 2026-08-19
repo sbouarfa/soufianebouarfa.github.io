@@ -4,6 +4,7 @@ domain: "Aerospace"
 summary: "Enterprise architecture and governance design supporting compliant digital content management in a highly regulated aerospace environment."
 tags: ["Information Governance", "Enterprise Architecture", "Compliance", "Platform Architecture"]
 order: 1
+published: false
 ---
 
 ## Context

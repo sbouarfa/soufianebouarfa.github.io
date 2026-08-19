@@ -73,18 +73,29 @@ def period_ranges(period):
 
 
 def get(path, start, end, retries=3, retry_delay=10, **params):
+    last_exc = None
     for attempt in range(1, retries + 1):
-        r = requests.get(
-            f"{API}/{path}",
-            headers=HEADERS,
-            params={"start": iso(start), "end": iso(end), **params},
-            timeout=30,
-        )
+        try:
+            r = requests.get(
+                f"{API}/{path}",
+                headers=HEADERS,
+                params={"start": iso(start), "end": iso(end), **params},
+                timeout=30,
+            )
+        except requests.exceptions.RequestException as exc:
+            print(f"GoatCounter API request failed (attempt {attempt}/{retries}): {exc}")
+            last_exc = exc
+            if attempt < retries:
+                time.sleep(retry_delay)
+            continue
         if r.ok:
             return r.json()
         print(f"GoatCounter API error {r.status_code} for {r.url} (attempt {attempt}/{retries}):\n{r.text}")
+        last_exc = None
         if attempt < retries:
             time.sleep(retry_delay)
+    if last_exc:
+        raise last_exc
     r.raise_for_status()
 
 

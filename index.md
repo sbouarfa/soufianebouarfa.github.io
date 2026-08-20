@@ -15,16 +15,16 @@ redirect_from:
   </div>
 </div>
 
-<p>I run <a href="https://www.novelinsights.com/">Novel Insights</a>, an independent architecture practice. This page is the personal record — where I have worked, what I have published, and what I am certified in.</p>
+<p>I run <a href="https://www.novelinsights.com/">Novel Insights</a>, an independent architecture practice.</p>
 
 ## Selected experience
 {: #experience}
 
-**Novel Insights** — Founder and Principal Architect, 2022–present
-: Independent architecture practice for public-sector, infrastructure and regulated organisations. Current engagement: Solution Architect, Information Governance, at Rijkswaterstaat since 2023.
+**Novel Insights** — Founder and Enterprise Architect, 2022–present
+: Independent architecture practice for public-sector, infrastructure and regulated organisations. Current engagement: Information Governance Architect at Rijkswaterstaat since 2023.
 
 **Accenture** — Manager, Data & AI, 2021–2023
-: Transformation programmes in aviation and energy, as contractor for Airbus and Shell Renewables.
+: Digital transformation programmes in aviation and energy, as contractor for Airbus and Shell Renewables.
 
 **Abu Dhabi Polytechnic** — Assistant Professor, Aircraft Maintenance Technology, 2019–2021
 : Teaching, curriculum development and department coordination in aircraft maintenance engineering.
@@ -34,9 +34,9 @@ redirect_from:
 
 ### Earlier roles
 
-- Deloitte — Junior Manager, Responsible Data & Analytics, 2018–2019
+- Deloitte — Junior Manager, Data & AI, 2018–2019
 - Accenture — Cyber Security Consultant, 2011
-- EUROCONTROL — Complexity Science Researcher, 2009–2010
+- EUROCONTROL Experiment Centre (Brétigny-sur-Orge, France) — Complexity Science Researcher, 2009–2010
 - Accenture — Cyber Security Analyst, 2007–2009
 
 ## Education
@@ -53,7 +53,7 @@ redirect_from:
 
 My research examined how complex sociotechnical systems behave under uncertainty — how people and technology coordinate, how failures propagate, and how resilience is produced rather than assumed. The central concern was emergent behaviour: outcomes that arise from interactions between parts of a system rather than from any single component, and which can be beneficial as much as harmful. My doctoral work applied agent-based modelling and simulation to two cases — emergent safety risk in runway crossing operations, and the role of coordination in airline operations control resilience. Later work applied computer vision to aircraft inspection.
 
-Research funded by a EUROCONTROL doctoral grant and further research grants from EUROCONTROL and Delft University of Technology.
+This PhD research was funded by a EUROCONTROL doctoral grant and by Delft University of Technology.
 
 Selected work below; the full record is on [Google Scholar](https://scholar.google.com/citations?user=TK9PBDMAAAAJ) and [ResearchGate](https://www.researchgate.net/profile/Soufiane-Bouarfa).
 
